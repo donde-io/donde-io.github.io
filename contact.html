@@ -48,18 +48,18 @@
 				<fieldset>
 					<h2>To schedule a demo or to speak to one of our agents, please fill out the form below and we’ll be in touch within 48 hours.</h2>
 					<div class="frame">
-						<input type="text" class="text" value="Business Name">
-						<input type="text" class="text" value="Abraham Lin">
+						<input id="businessForm" type="text" class="text" placeholder="Business Name">
+						<input id="nameForm" type="text" class="text" placeholder="Your name">
 					</div>
 					<div class="frame">
-						<input type="text" class="text" value="Phone Number">
-						<input type="text" class="text" value="Email Address">
+						<input id="phoneForm" type="text" class="text" placeholder="Phone Number">
+						<input id="emailForm" type="text" class="text" placeholder="Email Address">
 					</div>
 					<div class="frame">
-						<textarea cols="1" rows="1">Start typing your message here...</textarea>
+						<textarea id="messageForm" cols="1" rows="1" placeholder="Start typing your message here..."></textarea>
 					</div>
 					<div class="clearfix">
-						<input type="submit" class="btn" value="send">
+						<input id="sendForm" type="button" class="btn" value="send">
 					</div>
 				</fieldset>
 			</form>
@@ -92,6 +92,7 @@
 	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/clear-inputs.js"></script>
+    <script src="http://www.parsecdn.com/js/parse-1.2.7.min.js"></script>
 	<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
