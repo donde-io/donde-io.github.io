@@ -56,35 +56,46 @@ $(document).ready(function(){
         //class methods
     });
 
+    function sendToParse(contact){
+        var demoRequest = new DemoRequest();
+
+        demoRequest.set("email", contact.email?contact.email:"");
+        demoRequest.set("business", contact.business?contact.business:"");
+        demoRequest.set("name", contact.name?contact.name:"");
+        demoRequest.set("phone", contact.phone?contact.phone:"");
+        demoRequest.set("time", contact.time?contact.time:"");
+        demoRequest.set("message", contact.message?contact.message:"");
+
+        console.log('Saving demo request : '+demoRequest.toJSON());
+
+        demoRequest.save(null, {
+            success: function(demoRequest) {
+                // The object was saved successfully.
+                alert('Thanks for the request! We\'ll contact you shortly.');
+            },
+            error: function(demoRequest, error) {
+                alert('Failed to send the demo request! Please try again.');
+            }
+        });
+    }
+
     //Simple demo request (sharing just an email)
     if($('#emailDemo').exists()){
-        $('#emailDemo').on('click',function(){
-            var email = $('#emailField').val();
+        function singleEmailDemo(){
+            var email = $('#emailInput').val();
 
             if(!email){
                 alert('Please fill the email field');
             }else if(!isValidEmailAddress(email)){
                 alert('Sorry but the email address is invalid, please try again');
             }else{
-                var demoRequest = new DemoRequest();
-
-                demoRequest.set("email", email);
-                demoRequest.set("business", "");
-                demoRequest.set("name", "");
-                demoRequest.set("phone", "");
-                demoRequest.set("time", "");
-                demoRequest.set("message", "");
-
-                demoRequest.save(null, {
-                    success: function(demoRequest) {
-                        // The object was saved successfully.
-                        alert('Thanks for the request! We\'ll contact you shortly.');
-                    },
-                    error: function(demoRequest, error) {
-                        alert('Failed to send the demo request! Please try again.');
-                    }
-                });
+                sendToParse({email:email});
             }
+        }
+
+        $('#emailDemo').on('click',singleEmailDemo);
+        $('#emailInput').keypress(function(e){
+            if (e.keyCode == 13) singleEmailDemo();
         });
     }
 
@@ -109,24 +120,7 @@ $(document).ready(function(){
             }else if(!isValidEmailAddress(email)){
                 alert('Sorry but the email address is invalid, please try again');
             }else{
-                var demoRequest = new DemoRequest();
-
-                demoRequest.set("email", email);
-                demoRequest.set("business", business);
-                demoRequest.set("name", name);
-                demoRequest.set("phone", phone);
-                demoRequest.set("time", "");
-                demoRequest.set("message", message);
-
-                demoRequest.save(null, {
-                    success: function(demoRequest) {
-                        // The object was saved successfully.
-                        alert('Thanks for the request! We\'ll contact you shortly.');
-                    },
-                    error: function(demoRequest, error) {
-                        alert('Failed to send the demo request! Please try again.');
-                    }
-                });
+                sendToParse({email: email, business: business, name: name, phone: phone, message: message})
             }
         });
     }
