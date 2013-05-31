@@ -64,7 +64,7 @@ header .desktop-nav {
 }
 header .desktop-nav li {
 	float:left;
-	font:11px/18px 'futuralt', Helvetica, sans-serif;
+	font:15px/24px 'futuralt', Helvetica, sans-serif;
 	padding:0 0 0 32px;
 }
 header .desktop-nav a {color:#f0f0ee;}
@@ -894,6 +894,9 @@ footer .holder p {margin:0;}
 	margin:0 0 26px;
 }
 .pricing p {margin:0 0 64px;}
+.pricing .holder > p {
+    font-size: 18px;
+}
 .pricing-area {
 	padding:0 0 122px;
 	position:relative;
