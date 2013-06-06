@@ -54,7 +54,7 @@ $(document).ready(function(){
     }
 
     //init parse tool app
-    Parse.initialize("W3sSL98svnTEc5KlVDmbTnz2J7UxeUWb4T9NP9wr", "5E1HX2jE46l9UBuChHMMEI35JFsqNYM4bOhRfBrk");
+    Parse.initialize("gHDRtWSuD02eG4HtB21RjRMeLZmH7PJvNVmhuNI7", "i2NqiVz7yionmTkeifhPQIvazs3YdtlWAfiIUnwK");
 
     //Data Models & Collection declaration
     var DemoRequest = Parse.Object.extend("DemoRequest", {
