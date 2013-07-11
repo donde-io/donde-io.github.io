@@ -535,7 +535,9 @@ h6 {
 	position:relative;
 }
 .service .started-form .frame:after {
-	content:'';	display:block;	clear:both;
+	content:'';
+	display:block;
+	clear:both;
 }
 .service .started-form .text {
 	float:left;
@@ -902,7 +904,7 @@ footer .holder p {margin:0;}
 	position:relative;
 }
 .pricing-area .slides {
-	margin:0 0 0 -20px;
+	margin:0 0 0 121px;
 	padding:0;
 	list-style:none;
 }
