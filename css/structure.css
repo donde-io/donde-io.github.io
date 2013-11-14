@@ -2096,7 +2096,7 @@ body {
 }
 
 /* line 26, ../sass/_elements.scss */
-a, a:visited {
+a {
   color: #06F;
   outline: 0;
   text-decoration: none;
