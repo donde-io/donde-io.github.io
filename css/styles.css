@@ -666,6 +666,12 @@ footer .holder p {margin:0;}
 	text-align:center;
 	position:relative;
 }
+a.visual.map {
+	background: url(../images/bg-map.jpg) no-repeat top center;
+	display: block;
+	height: 360px;
+	padding: 0;
+}
 .visual h1 {
 	font-size:24px;
 	line-height:30px;
@@ -690,6 +696,34 @@ footer .holder p {margin:0;}
 	width:100%;
 	height:12px;
 	background:url(../images/shadow-02.png) repeat-x;
+}
+.contact-us { background: #414142; }
+.contact-us .holder {
+	color: #FFF;
+	max-width: 782px;
+	margin: 0 auto;
+	padding: 72px 0 49px;
+	text-align: center;
+}
+.contact-us h2 {
+	font-size:21px;
+	line-height:32px;
+	margin:0 0 32px;
+	text-align:center;
+	color:#f0f0ee;
+}
+.contact-us h3 {
+	font-size: 18px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 10px;
+	text-align: center;
+	color: #EDEDED;
+}
+.contact-us p { 
+	color: #CCC;
+	line-height: 1.6;
+	margin: 0 0 20px 0;
 }
 .contact-form {background:#414142;}
 .contact-form .holder {
@@ -758,6 +792,99 @@ footer .holder p {margin:0;}
 	margin:7px 0 0;
 	position:relative;
 }
+
+/* Audit Forms */
+.audit-form {background:#414142;}
+.audit-form .holder {
+	max-width:782px;
+	margin:0 auto;
+	padding:72px 0 49px;
+}
+.audit-form h2 {
+	font-size:21px;
+	line-height:32px;
+	margin: 0 0 40px 0;
+	text-align:center;
+	color: #F0F0EE;
+}
+.audit-form h4 {
+	font-size: 17px;
+	font-weight: normal;
+	line-height: 24px;
+	margin: 0 0 20px 0;
+	color: #CCC;
+}
+.audit-form hr {
+	color: #333;
+	background: #333;
+	border: none;
+	height: 1px;
+}
+.audit-form .frame {
+	overflow:hidden;
+	margin:0 0 16px -18px;
+}
+.audit-form textarea,
+.audit-form .text,
+.audit-form .radio {
+	float:left;
+	width:340px;
+	border:0;
+	background:#4b4b4d;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	padding:12px 21px;
+	font:14px/18px 'Noto Sans', Helvetica, sans-serif;
+	height:18px;
+	margin:0 0 0 18px;
+	color:#f0f0ee;
+	position:relative;
+}
+.audit-form .text.address { width: 740px; }
+.audit-form .text.zip { width: 140px; }
+.audit-form .radio {
+	float: none;
+	width: 18px;
+	margin: 0 10px 0 18px;
+	border-radius: 40px;
+}
+.audit-form textarea.focus,
+.audit-form .text.focus {
+	background:#f0f0ee;
+	color:#414142;
+	-webkit-box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	box-shadow:none !important;
+}
+.audit-form textarea {
+	width:740px;
+	min-height:122px;
+	resize:vertical;
+	margin:1px 0 0 18px;
+	padding:20px 21px;
+}
+.audit-form .btn {
+	float:right;
+	background:#f0f0ee;
+	width:86px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px;
+	height:35px;
+	font:bold 14px/34px 'Noto Sans', Helvetica, sans-serif;
+	border:0;
+	-webkit-box-shadow:none;
+	-moz-box-shadow:none;
+	box-shadow:none;
+	text-shadow:none;
+	padding:0 0 1px !important;
+	color:#414142;
+	margin:7px 0 0;
+	position:relative;
+}
+
+
 .prefooter-in {
 	background:#f0f0ee;
 	padding-top:83px;
@@ -779,6 +906,12 @@ footer .holder p {margin:0;}
 	font-size:18px;
 	line-height:27px;
 	color:#414142;
+}
+a.top-block.map {
+	background: url(../images/bg-map.jpg) no-repeat center center;
+	display: none;
+	height: 260px;
+	padding: 0;
 }
 .top-block h2 {margin:0 0 30px;}
 .top-block p {margin:0;}
@@ -1011,6 +1144,7 @@ footer .holder p {margin:0;}
 	.pricing h2,
 	.contact-form h2,
 	.visual,
+	a.visual.map,
 	footer .holder p,
 	.prefooter .add-nav,
 	.prefooter h5,
@@ -1170,7 +1304,7 @@ footer .holder p {margin:0;}
 		padding:0;
 		min-height:1px;
 	}
-	.top-block {display:block;}
+	.top-block, a.top-block.map {display:block;}
 	.contact-form .holder {padding:31px 46px 25px 56px;}
 	.contact-form .frame {
 		margin:0 -8px 0 0;
