@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>dónde- drive retail traffic</title>
@@ -42,18 +43,57 @@
 		</div><!-- holder -->
 	</header>
 	<div class="visual">
-		<h1>Thank you!</h1>
+		<h1>schedule a demo</h1>
 		<div class="holder">
-			<p>We appreciate you taking the time to fill out the form and we'll be in touch shortly.</p>
-		<br>
-		<a href="index.html" class="btn"><span class="hidden-phone"></span> home</a>
-		<br>
+			<p>Mobile product and store locators for brands and chains looking to increase local retail sales and gain real-time marketing insights.</p>
 		</div>
 		<img src="images/img-01.png" width="637" height="233" alt="#">
 		<span class="shadow"></span>
-	</div>
-	<!-- visual -->
-	<!-- prefooter -->
+	</div><!-- visual -->
+	<div class="top-block">
+		<h2>Get in touch.</h2>
+		<p>Dónde offers mobile store locators for national brands looking to increase local retail sales and gain real-time marketing insights.</p>
+	</div><!-- top-block -->
+	<section class="contact-form">
+		<div class="holder">
+			<form action="#">
+				<fieldset>
+					<h2>To schedule a demo or to speak to one of our agents, please fill out the form below and we’ll be in touch within 48 hours.</h2>
+					<div class="frame">
+						<input id="businessForm" type="text" class="text" placeholder="Business Name">
+						<input id="nameForm" type="text" class="text" placeholder="Your name">
+					</div>
+					<div class="frame">
+						<input id="phoneForm" type="text" class="text" placeholder="Phone Number">
+						<input id="emailForm" type="text" class="text" placeholder="Email Address">
+					</div>
+					<div class="frame">
+						<textarea id="messageForm" cols="1" rows="1" placeholder="Start typing your message here..."></textarea>
+					</div>
+					<div class="clearfix">
+						<input id="sendForm" type="button" class="btn" value="send email">
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</section><!-- contact-form -->
+	<section class="prefooter prefooter-in">
+		<h5>say hello.</h5>
+		<div class="clearfix">
+			<ul class="social">
+				<li><a href="http://twitter.com/d0nde">twitter</a></li>
+				<li><a class="facebook" href="http://facebook.com/d0nde">facebook</a></li>
+				<li class="hidden-phone"><a class="in" href="http://www.linkedin.com/company/donde">Linked In</a></li>
+				<li class="visible-phone"><a class="google" href="https://plus.google.com/+DondeIo/">google+</a></li>
+			</ul>
+		</div>
+		<ul class="add-nav">
+			<li><a href="terms.html">TERMS OF SERVICE</a></li>
+			<li><a href="demo.html">REQUEST DEMO</a></li>
+			<li><a href="http://blog.donde.io">BLOG</a></li>
+			<li><a href="about.html">ABOUT US</a></li>
+		</ul>
+	</section><!-- prefooter -->
 	<section>
 	<footer class="footer">
 		<div class="holder">
