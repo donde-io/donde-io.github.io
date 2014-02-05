@@ -30,7 +30,7 @@ $(document).ready(function(){
         demoRequest.save(null, {
             success: function(demoRequest) {
                 // The object was saved successfully.
-                alert('Thanks for the request! We\'ll contact you shortly.');
+                location = 'thank-you.html';
             },
             error: function(demoRequest, error) {
                 alert('Failed to send the demo request! Please try again.');
