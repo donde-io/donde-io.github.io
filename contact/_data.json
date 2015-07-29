@@ -1,0 +1,14 @@
+{
+	"index" : {
+		"layout"			: "../_layout",
+		"title"				: "Contact | Dónde",
+    	"description"		: "Get in touch with Dónde at info@donde.io for more information or give us a call at (844) 366-3382.",
+    	"metabots"			: "index, follow"
+	},
+	"thank-you" : {
+		"layout"			: "../_layout-thank",
+		"title"				: "Thank You | Dónde",
+    	"description"		: "Thank you for contacting Dónde, we will respond to your inquiry shortly",
+    	"metabots"			: "noindex, nofollow"
+	}
+}

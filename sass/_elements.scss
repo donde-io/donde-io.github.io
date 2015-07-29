@@ -1,0 +1,71 @@
+/*
+* Get Structure
+* Copyright Ace Eight of Spades 2013
+* www.getstructu.re
+*/
+
+
+// ----------
+// Base Elements
+
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background: #F5F5F5;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  height: 100%;
+  line-height: 1.6;
+  padding: 0;
+  width: 100%;
+}
+a {
+  color: #06F;
+  outline: 0;
+  text-decoration: none;
+}
+a:hover, a:focus { text-decoration: underline; }
+h1, h2, h3, h4, h5, h6 {
+  color: #454545;
+  margin: 0 0 20px 0;
+}
+h1, h2 { margin: 0 0 32px 0; }
+h5, h6 { margin: 0 0 10px 0; }
+h1 { font-size: 2.5em; } /* 40px */
+h2 { font-size: 2.25em;} /* 36px */
+h3 { font-size: 2em; } /* 32px */
+h4 { font-size: 1.5em; } /* 24px */
+h5 { font-size: 1.25em; } /* 20px */
+h6 { font-size: 1em; } /* 16px */
+p { margin: 0 0 20px 0; }
+strong { font-weight: 700; }
+i { font-style: italic; }
+.center { text-align: center; }
+blockquote {
+	background: #F5F5F5;
+	border-left: 8px solid #DDD;
+	margin: 0 16px 16px;
+	padding: 12px 16px;
+}
+blockquote p { display: inline; }
+ul, ol {
+  margin: 0 0 24px 0;
+  padding: 0 0 0 32px;
+}
+ol { list-style: decimal; }
+ul { list-style: disc; }
+img {
+  height: auto;
+	max-width: 100%;
+}
+hr {
+  background: #DDD;
+  border: none;
+  height: 4px;
+  margin: 60px 0 40px 0;
+}
+.ng-cloak { display: none !important; }

@@ -1,0 +1,180 @@
+/*
+* Get Structure
+* Copyright Ace Eight of Spades 2013
+* www.getstructu.re
+*/
+
+
+// ----------
+// Modals
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  top: 50%;
+  left: 50%;
+  text-align: left;
+  width: 90%;
+  margin-left: -45%;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+/*******************************
+            Content
+*******************************/
+/*--------------
+     Close
+---------------*/
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0.8;
+  font-size: 1.25em;
+  top: -1.75em;
+  right: -1.75em;
+  color: #FFFFFF;
+}
+.modal > .close:hover {
+  opacity: 1;
+}
+/*--------------
+     Header
+---------------*/
+.modal > .header {
+  margin: 0em;
+  padding: 1.5rem 2rem;
+  font-size: 1.6em;
+  font-weight: bold;
+  -webkit-border-radius: 0.325em 0.325em 0px 0px;
+  -moz-border-radius: 0.325em 0.325em 0px 0px;
+  border-radius: 0.325em 0.325em 0px 0px;
+}
+/*--------------
+     Content
+---------------*/
+.modal > .content {
+  display: table;
+  width: 100%;
+  position: relative;
+  padding: 2em;
+  background-color: #F4F4F4;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.modal > .content > .left {
+  display: table-cell;
+  padding-right: 5%;
+  min-width: 25%;
+}
+.modal > .content > .right {
+  display: table-cell;
+  padding-left: 5%;
+  vertical-align: top;
+  min-width: 25%;
+}
+.modal > .content > .left > .icon {
+  font-size: 8em;
+  margin: 0em;
+}
+.modal > .content p {
+  line-height: 1.6;
+}
+/*--------------
+     Actions
+---------------*/
+.modal .actions {
+  padding: 1rem 2rem;
+  text-align: right;
+}
+.modal .actions > .button {
+  margin-left: 0.75em;
+}
+/*-------------------
+       Sizing
+--------------------*/
+/* Mobile Only */
+@media only screen and (max-width: 768px) {
+  .modal .content .left {
+    display: block;
+    padding: 0em 0em 0em 1em;
+  }
+  .modal .content .right {
+    display: block;
+    padding: 1em 0em 0em 0em;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+}
+/* Tablet and Mobile */
+@media only screen and (max-width: 998px) {
+  .modal {
+    width: 92%;
+    margin-left: -46%;
+  }
+  .modal > .close {
+    color: rgba(0, 0, 0, 0.8);
+    top: 1.5rem;
+    right: 1rem;
+  }
+}
+/* Computer / Responsive */
+@media only screen and (min-width: 998px) {
+  .modal {
+    width: 74%;
+    margin-left: -37%;
+  }
+}
+@media only screen and (min-width: 1500px) {
+  .modal {
+    width: 64%;
+    margin-left: -32%;
+  }
+}
+@media only screen and (min-width: 1750px) {
+  .modal {
+    width: 54%;
+    margin-left: -27%;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .modal {
+    width: 44%;
+    margin-left: -22%;
+  }
+}
+/*******************************
+             Types
+*******************************/
+.basic.modal {
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+}
+.basic.modal > .close {
+  top: 1.5rem;
+  right: 1rem;
+}
+.basic.modal .content {
+  background-color: transparent;
+}
+/*******************************
+            Variations
+*******************************/
+/* A modal that cannot fit on the page */
+.modal.scrolling {
+  position: absolute;
+  margin-top: 10px;
+}
+/*******************************
+              States
+*******************************/
+.active.modal {
+  display: block;
+}

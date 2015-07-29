@@ -1,0 +1,6 @@
+# Allow crawling of all content
+User-agent: *
+Disallow: /signup/
+Disallow: /tour/
+Disallow: /pricing/
+Disallow: /features/refer.html

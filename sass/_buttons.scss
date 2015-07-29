@@ -1,0 +1,877 @@
+/*
+* Get Structure
+* Copyright Ace Eight of Spades 2013
+* www.getstructu.re
+*/
+
+
+// ----------
+// Buttons
+
+/* Prototype */
+.button, a.button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  min-height: 1em;
+  outline: none;
+  border: none;
+  background-color: #EBEBEB;
+  color: #999;
+  padding: 0.9em 1.8em;
+  line-height: 1;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0em -0.185rem 0em rgba(0, 0, 0, 0.1) inset;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
+}
+
+.teal.buttons .button,
+.teal.button {
+  background-color: #349CA5;
+  color: #FFF;
+}
+.teal.buttons .button:hover,
+.teal.button:hover,
+.teal.buttons .active.button,
+.teal.button.active {
+  background-color: #26777F;
+  color: #FFF;
+}
+.teal.buttons .button:active,
+.teal.button:active {
+  background-color: #26777F;
+  color: #FFF;
+}
+
+
+
+
+
+
+/*--------------
+     Count
+---------------*/
+.count.button {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+}
+.count.button > .count {
+  position: absolute;
+  background-color: #FFFFFF;
+  border: 1px solid #F0F0F0;
+  margin: -0.8em -1.5em;
+  padding: 0.8em 1.5em;
+}
+/*-------------------
+       Primary
+--------------------*/
+.primary.buttons .button,
+.primary.button {
+  background-color: #D95C5C;
+  color: #FFFFFF;
+}
+.primary.buttons .button:hover,
+.primary.button:hover,
+.primary.buttons .active.button,
+.primary.button.active {
+  background-color: #E75859;
+  color: #FFFFFF;
+}
+.primary.buttons .button:active,
+.primary.button:active {
+  background-color: #D24B4C;
+  color: #FFFFFF;
+}
+/*-------------------
+      Secondary
+--------------------*/
+.secondary.buttons .button,
+.secondary.button {
+  background-color: #00B5AD;
+  color: #FFFFFF;
+}
+.secondary.buttons .button:hover,
+.secondary.button:hover,
+.secondary.buttons .active.button,
+.secondary.button.active {
+  background-color: #009A93;
+  color: #FFFFFF;
+}
+.secondary.buttons .button:active,
+.secondary.button:active {
+  background-color: #00847E;
+  color: #FFFFFF;
+}
+/*-------------------
+       Social
+--------------------*/
+/* Facebook */
+.facebook.button {
+  background-color: #3B579D;
+  color: #FFFFFF;
+}
+.facebook.button:hover {
+  background-color: #3A59A9;
+}
+.facebook.button:active {
+  background-color: #334F95;
+}
+/* Twitter */
+.twitter.button {
+  background-color: #00ACED;
+  color: #FFFFFF;
+}
+.twitter.button:hover {
+  background-color: #00B9FF;
+}
+.twitter.button:active {
+  background-color: #009EDA;
+}
+/*--------------
+     Icon
+---------------*/
+.button > .icon {
+  margin-right: 0.5em;
+  line-height: 1;
+  -webkit-transition: opacity 0.1s ease
+  ;
+  -moz-transition: opacity 0.1s ease
+  ;
+  -o-transition: opacity 0.1s ease
+  ;
+  -ms-transition: opacity 0.1s ease
+  ;
+  transition: opacity 0.1s ease
+  ;
+}
+/*******************************
+             States
+*******************************/
+/*--------------
+     Active
+---------------*/
+.buttons .active.button,
+.active.button {
+  opacity: 1 !important;
+  background-color: #B0B0B0;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0.1)));
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 0px 0.3em 0px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0px 0px 0.3em 0px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0px 0px 0.3em 0px rgba(0, 0, 0, 0.3) inset;
+}
+/*--------------
+      Hover
+---------------*/
+.button:hover,
+.active.button:hover {
+  opacity: 1 !important;
+  background-color: #A4A4A4;
+  color: #FFFFFF;
+}
+.button:hover .icon,
+.button.hover .icon {
+  opacity: 0.85;
+}
+/*--------------
+      Down
+---------------*/
+.button:active,
+.active.button:active {
+  opacity: 1 !important;
+  background-color: #8C8C8C;
+  color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 0.2em 0px rgba(0, 0, 0, 0.3) inset;
+  -moz-box-shadow: 0px 1px 0.2em 0px rgba(0, 0, 0, 0.3) inset;
+  box-shadow: 0px 1px 0.2em 0px rgba(0, 0, 0, 0.3) inset;
+}
+/*--------------
+    Loading
+---------------*/
+.loading.button {
+  position: relative;
+  cursor: default;
+  background-color: #F3F3F3 !important;
+  color: transparent !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-transition: all 0s linear;
+  -moz-transition: all 0s linear;
+  -o-transition: all 0s linear;
+  -ms-transition: all 0s linear;
+  transition: all 0s linear;
+}
+.loading.button:after {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: transparent url(../images/loader-mini.gif) no-repeat 50% 50%;
+}
+.labeled.icon.loading.button .icon {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/*-------------------
+      Disabled
+--------------------*/
+.disabled.button {
+  cursor: default;
+  color: #DDDDDD !important;
+  background-color: rgba(50, 50, 50, 0.05) !important;
+  background-image: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+/*******************************
+           Variations
+*******************************/
+/*-------------------
+       Floated
+--------------------*/
+.left.floated.buttons,
+.left.floated.button {
+  float: left;
+  margin-right: 0.25em;
+}
+.right.floated.buttons,
+.right.floated.button {
+  float: right;
+  margin-left: 0.25em;
+}
+/*-------------------
+        Sizes
+--------------------*/
+.buttons .button,
+.button {
+  font-size: 1rem;
+}
+.buttons.mini .button,
+.mini.button {
+  font-size: 0.8125rem;
+  padding: 0.6em 0.8em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.tiny.buttons .button,
+.tiny.button {
+  font-size: 0.875rem;
+  padding: 0.6em 0.8em;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.small.buttons .button,
+.small.button {
+  font-size: 0.875rem;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.large.buttons .button,
+.large.button {
+  font-size: 1.125rem;
+}
+.big.buttons .button,
+.big.button {
+  font-size: 1.25rem;
+}
+.huge.buttons .button,
+.huge.button {
+  font-size: 1.375rem;
+}
+.massive.buttons .button,
+.massive.button {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* loading */
+.huge.loading.button:after {
+  background-image: url(../images/loader-small.gif);
+}
+.massive.buttons .loading.button:after,
+.gigantic.buttons .loading.button:after,
+.massive.loading.button:after,
+.gigantic.loading.button:after {
+  background-image: url(../images/loader-medium.gif);
+}
+.huge.loading.button:after,
+.huge.loading.button.active:after {
+  background-image: url(../images/loader-small.gif);
+}
+.massive.buttons .loading.button:after,
+.gigantic.buttons .loading.button:after,
+.massive.loading.button:after,
+.gigantic.loading.button:after,
+.massive.buttons .loading.button.active:after,
+.gigantic.buttons .loading.button.active:after,
+.massive.loading.button.active:after,
+.gigantic.loading.button.active:after {
+  background-image: url(../images/loader-medium.gif);
+}
+/*--------------
+    Icon Only
+---------------*/
+.icon.buttons .button,
+.icon.button {
+  padding: 0.8em;
+}
+.icon.buttons .button > .icon,
+.icon.button > .icon {
+  opacity: 1;
+  margin: 0em;
+  vertical-align: top;
+}
+/*-------------------
+        Basic
+--------------------*/
+.basic.buttons .button,
+.basic.button {
+  background-color: transparent !important;
+  background-image: none;
+  color: #999999 !important;
+  font-weight: normal;
+  text-transform: none;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.basic.buttons {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  -webkit-border-radius: 0.2em;
+  -moz-border-radius: 0.2em;
+  border-radius: 0.2em;
+}
+.basic.buttons .button:hover,
+.basic.button:hover {
+  color: #7F7F7F !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.18) inset;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.18) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.18) inset;
+}
+.basic.buttons .button:active,
+.basic.button:active {
+  background-color: rgba(0, 0, 0, 0.02) !important;
+  color: #7F7F7F !important;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+}
+.basic.buttons .button.active,
+.basic.button.active {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #7F7F7F;
+  -webkit-box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+  -moz-box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+  box-shadow: 0px 0px 0px 1px #BDBDBD inset;
+}
+.basic.buttons .button.active:hover,
+.basic.button.active:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+/* Basic Group */
+.basic.buttons .button {
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.basic.buttons .button:hover,
+.basic.buttons .button:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.basic.buttons .button.active {
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) inset;
+}
+/*--------------
+   Labeled Icon
+---------------*/
+.labeled.icon.buttons .button,
+.labeled.icon.button {
+  position: relative;
+  padding-left: 4em !important;
+  padding-right: 1.4em !important;
+}
+.labeled.icon.buttons > .button > .icon,
+.labeled.icon.button > .icon {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 2.75em;
+  height: 100%;
+  padding-top: 0.8em;
+  background-color: rgba(0, 0, 0, 0.05);
+  text-align: center;
+  -webkit-border-radius: 0.2em 0px 0px 0.2em;
+  -moz-border-radius: 0.2em 0px 0px 0.2em;
+  border-radius: 0.2em 0px 0px 0.2em;
+  line-height: 1;
+  -webkit-box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+}
+.labeled.icon.buttons .button > .icon {
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  border-radius: 0em;
+}
+.labeled.icon.buttons .button:first-child > .icon {
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+.labeled.icon.buttons .button:last-child > .icon {
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+.vertical.labeled.icon.buttons .button:first-child > .icon {
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  border-radius: 0em;
+  border-top-left-radius: 0.2em;
+}
+.vertical.labeled.icon.buttons .button:last-child > .icon {
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  border-radius: 0em;
+  border-bottom-left-radius: 0.2em;
+}
+.right.labeled.icon.button {
+  padding-left: 1.4em !important;
+  padding-right: 4em !important;
+}
+.left.fluid.labeled.icon.button,
+.right.fluid.labeled.icon.button {
+  padding-left: 1.4em !important;
+  padding-right: 1.4em !important;
+}
+.right.labeled.icon.button .icon {
+  left: auto;
+  right: 0em;
+  -webkit-border-radius: 0em 0.2em 0.2em 0em;
+  -moz-border-radius: 0em 0.2em 0.2em 0em;
+  border-radius: 0em 0.2em 0.2em 0em;
+  -webkit-box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  -moz-box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+  box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
+}
+/*--------------
+     Toggle
+---------------*/
+/* Toggle (Modifies active state to give affordances) */
+.toggle.buttons .active.button,
+.buttons .button.toggle.active,
+.button.toggle.active {
+  background-color: #5BBD72 !important;
+  color: #FFFFFF !important;
+}
+.button.toggle.active:hover {
+  background-color: #58CB73 !important;
+  color: #FFFFFF !important;
+}
+/*--------------
+     Bubbly
+---------------*/
+.circular.button {
+  -webkit-border-radius: 10em;
+  -moz-border-radius: 10em;
+  border-radius: 10em;
+}
+/*--------------
+     Attached
+---------------*/
+.attached.button {
+  display: block;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1) !important;
+}
+.attached.top.button {
+  -webkit-border-radius: 0.2em 0.2em 0em 0em;
+  -moz-border-radius: 0.2em 0.2em 0em 0em;
+  border-radius: 0.2em 0.2em 0em 0em;
+}
+.attached.bottom.button {
+  -webkit-border-radius: 0em 0em 0.2em 0.2em;
+  -moz-border-radius: 0em 0em 0.2em 0.2em;
+  border-radius: 0em 0em 0.2em 0.2em;
+}
+.attached.left.button {
+  display: inline-block;
+  border-left: none;
+  padding-right: 0.75em;
+  text-align: right;
+  -webkit-border-radius: 0.2em 0em 0em 0.2em;
+  -moz-border-radius: 0.2em 0em 0em 0.2em;
+  border-radius: 0.2em 0em 0em 0.2em;
+}
+.attached.right.button {
+  display: inline-block;
+  padding-left: 0.75em;
+  text-align: left;
+  -webkit-border-radius: 0em 0.2em 0.2em 0em;
+  -moz-border-radius: 0em 0.2em 0.2em 0em;
+  border-radius: 0em 0.2em 0.2em 0em;
+}
+/*-------------------
+      Or Buttons
+--------------------*/
+.buttons .or {
+  position: relative;
+  float: left;
+  width: 0.3em;
+  height: 1em;
+  z-index: 3;
+}
+.buttons .or:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: 'or';
+  background-color: #FFFFFF;
+  margin-top: -0.15em;
+  margin-left: -0.9em;
+  width: 1.8em;
+  height: 1.8em;
+  line-height: 1.66;
+  color: #AAAAAA;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  -moz-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2) inset;
+  -moz-border-radius: 500px;
+  -webkit-border-radius: 500px;
+  border-radius: 500px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.buttons .or:after {
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  content: ' ';
+  width: 0.3em;
+  height: 1.8em;
+  background-color: transparent;
+  border-top: 0.6em solid #FFFFFF;
+  border-bottom: 0.6em solid #FFFFFF;
+}
+/* Fluid Or */
+.fluid.buttons .or {
+  width: 0em !important;
+}
+.fluid.buttons .or:after {
+  display: none;
+}
+/*-------------------
+       Attached
+--------------------*/
+/* Plural Attached */
+.attached.buttons {
+  margin: 0px;
+  -webkit-border-radius: 4px 4px 0px 0px;
+  -moz-border-radius: 4px 4px 0px 0px;
+  border-radius: 4px 4px 0px 0px;
+}
+.attached.buttons .button:first-child {
+  -webkit-border-radius: 4px 0px 0px 0px;
+  -moz-border-radius: 4px 0px 0px 0px;
+  border-radius: 4px 0px 0px 0px;
+}
+.attached.buttons .button:last-child {
+  -webkit-border-radius: 0px 4px 0px 0px;
+  -moz-border-radius: 0px 4px 0px 0px;
+  border-radius: 0px 4px 0px 0px;
+}
+/* Bottom Side */
+.bottom.attached.buttons {
+  margin-top: -1px;
+  -webkit-border-radius: 0px 0px 4px 4px;
+  -moz-border-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
+}
+.bottom.attached.buttons .button:first-child {
+  -webkit-border-radius: 0px 0px 0px 4px;
+  -moz-border-radius: 0px 0px 0px 4px;
+  border-radius: 0px 0px 0px 4px;
+}
+.bottom.attached.buttons .button:last-child {
+  -webkit-border-radius: 0px 0px 4px 0px;
+  -moz-border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 4px 0px;
+}
+/* Left Side */
+.left.attached.buttons {
+  margin-left: -1px;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+}
+.left.attached.buttons .button:first-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0px 4px 0px 0px;
+  -moz-border-radius: 0px 4px 0px 0px;
+  border-radius: 0px 4px 0px 0px;
+}
+.left.attached.buttons .button:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0px 0px 4px 0px;
+  -moz-border-radius: 0px 0px 4px 0px;
+  border-radius: 0px 0px 4px 0px;
+}
+/* Right Side */
+.right.attached.buttons,
+.right.attached.buttons .button {
+  margin-right: -1px;
+  -webkit-border-radius: 4px 0px 0px 4px;
+  -moz-border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0px 0px 4px;
+}
+.right.attached.buttons .button:first-child {
+  margin-left: -1px;
+  -webkit-border-radius: 4px 0px 0px 0px;
+  -moz-border-radius: 4px 0px 0px 0px;
+  border-radius: 4px 0px 0px 0px;
+}
+.right.attached.buttons .button:last-child {
+  margin-left: -1px;
+  -webkit-border-radius: 0px 0px 0px 4px;
+  -moz-border-radius: 0px 0px 0px 4px;
+  border-radius: 0px 0px 0px 4px;
+}
+/* Fluid */
+.fluid.buttons,
+.button.fluid,
+.fluid.buttons > .button {
+  display: block;
+  width: 100%;
+}
+.two.buttons > .button {
+  width: 50%;
+}
+.three.buttons > .button {
+  width: 33.333%;
+}
+.four.buttons > .button {
+  width: 25%;
+}
+.five.buttons > .button {
+  width: 20%;
+}
+.six.buttons > .button {
+  width: 16.666%;
+}
+.seven.buttons > .button {
+  width: 14.285%;
+}
+.eight.buttons > .button {
+  width: 12.500%;
+}
+.nine.buttons > .button {
+  width: 11.11%;
+}
+.ten.buttons > .button {
+  width: 10%;
+}
+.eleven.buttons > .button {
+  width: 9.09%;
+}
+.twelve.buttons > .button {
+  width: 8.3333%;
+}
+/* Fluid Vertical Buttons */
+.fluid.vertical.buttons,
+.fluid.vertical.buttons > .button {
+  width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.two.vertical.buttons > .button {
+  height: 50%;
+}
+.three.vertical.buttons > .button {
+  height: 33.333%;
+}
+.four.vertical.buttons > .button {
+  height: 25%;
+}
+.five.vertical.buttons > .button {
+  height: 20%;
+}
+.six.vertical.buttons > .button {
+  height: 16.666%;
+}
+.seven.vertical.buttons > .button {
+  height: 14.285%;
+}
+.eight.vertical.buttons > .button {
+  height: 12.500%;
+}
+.nine.vertical.buttons > .button {
+  height: 11.11%;
+}
+.ten.vertical.buttons > .button {
+  height: 10%;
+}
+.eleven.vertical.buttons > .button {
+  height: 9.09%;
+}
+.twelve.vertical.buttons > .button {
+  height: 8.3333%;
+}
+
+/*---------------
+    Positive
+----------------*/
+.positive.buttons .button,
+.positive.button {
+  background-color: #5BBD72 !important;
+  color: #FFFFFF;
+}
+.positive.buttons .button:hover,
+.positive.button:hover,
+.positive.buttons .active.button,
+.positive.button.active {
+  background-color: #58CB73 !important;
+  color: #FFFFFF;
+}
+.positive.buttons .button:active,
+.positive.button:active {
+  background-color: #4CB164 !important;
+  color: #FFFFFF;
+}
+/*---------------
+     Negative
+----------------*/
+.negative.buttons .button,
+.negative.button {
+  background-color: #D95C5C !important;
+  color: #FFFFFF;
+}
+.negative.buttons .button:hover,
+.negative.button:hover,
+.negative.buttons .active.button,
+.negative.button.active {
+  background-color: #E75859 !important;
+  color: #FFFFFF;
+}
+.negative.buttons .button:active,
+.negative.button:active {
+  background-color: #D24B4C !important;
+  color: #FFFFFF;
+}
+/*******************************
+            Groups
+*******************************/
+.buttons {
+  display: inline-block;
+  vertical-align: middle;
+}
+.buttons:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.buttons .button:first-child {
+  border-left: none;
+}
+.buttons .button {
+  float: left;
+  -webkit-border-radius: 0em;
+  -moz-border-radius: 0em;
+  border-radius: 0em;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+}
+.buttons .button:first-child {
+  margin-left: 0em;
+  border-top-left-radius: 0.2em;
+  border-bottom-left-radius: 0.2em;
+}
+.buttons .button:last-child {
+  border-top-right-radius: 0.2em;
+  border-bottom-right-radius: 0.2em;
+}
+/* Vertical  Style */
+.vertical.buttons {
+  display: inline-block;
+}
+.vertical.buttons .button {
+  display: block;
+  float: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-left: none;
+  box-shadow: none;
+}
+.vertical.buttons .button:first-child,
+.vertical.buttons .mini.button:first-child,
+.vertical.buttons .tiny.button:first-child,
+.vertical.buttons .small.button:first-child,
+.vertical.buttons .massive.button:first-child,
+.vertical.buttons .huge.button:first-child {
+  margin-top: 0px;
+  -moz-border-radius: 0.2em 0.2em 0px 0px;
+  -webkit-border-radius: 0.2em 0.2em 0px 0px;
+  border-radius: 0.2em 0.2em 0px 0px;
+}
+.vertical.buttons .button:last-child,
+.vertical.buttons .mini.button:last-child,
+.vertical.buttons .tiny.button:last-child,
+.vertical.buttons .small.button:last-child,
+.vertical.buttons .massive.button:last-child,
+.vertical.buttons .huge.button:last-child,
+.vertical.buttons .gigantic.button:last-child {
+  -moz-border-radius: 0px 0px 0.2em 0.2em;
+  -webkit-border-radius: 0px 0px 0.2em 0.2em;
+  border-radius: 0px 0px 0.2em 0.2em;
+}

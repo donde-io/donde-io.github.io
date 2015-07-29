@@ -1,0 +1,8 @@
+lsi: false
+markdown: rdiscount
+highlighter: true
+permalink: /:title
+site_url: 'http://www..donde.io'
+exclude: ['Rakefile', 'README.md', 'config.rb']
+github:
+username: dev@donde.io
