@@ -18,7 +18,7 @@ header {
 	@extend %clear;
 	@include breakpoint(l-three) { padding: 8px 0; }
 	&.home, &.secondary, &.start {
-		background: #373C46 url(../images/bg-header.png) top center no-repeat;
+		background: #373C46 url(../img/bg-header.png) top center no-repeat;
 		height: 460px;
 		padding: 25px 0 0 0;
 		@include breakpoint(l-three) {
@@ -27,8 +27,8 @@ header {
 		}
 	}
 	&.secondary { height: 215px; }
-	&.start { background: #373C46 url(../images/bg-header.png) top center no-repeat; }
-	&.demo { 
+	&.start { background: #373C46 url(../img/bg-header.png) top center no-repeat; }
+	&.demo {
 		background: inherit;
 		.buttons {
 			float: right;
@@ -47,11 +47,11 @@ header {
 		margin: 0 40px 0 0;
 		width: 84px;
 		&.blog { width: auto; }
-		@include breakpoint(l-three) { 
+		@include breakpoint(l-three) {
 			float: none;
 			margin: 0 auto;
 		}
-		img { 
+		img {
 			height: 42px;
 			margin: 0;
 		}
@@ -138,7 +138,7 @@ nav.omenu {
 		text-transform: uppercase;
 		@include breakpoint(l-three) { font-size: 0.8em; }
 	}
-	&.in-stock { 
+	&.in-stock {
 		padding: 100px 0 0 0;
 		@include breakpoint(l-three) { padding: 60px 0 0 0; }
 		h1 { line-height: 1.4; }
@@ -228,7 +228,7 @@ nav.omenu {
 		.action.input {
 			display: block;
 			width: 100%;
-			> input { 
+			> input {
 				display: inline-block;
 				float: left;
 				width: 54%;
@@ -270,7 +270,7 @@ nav.omenu {
 		&.signup {
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
-			p { font-size: 1.25em; margin: 0 0 56px 0; } 
+			p { font-size: 1.25em; margin: 0 0 56px 0; }
 			.sell {
 				span {
 					color: #FFF;
@@ -291,21 +291,21 @@ nav.omenu {
 				.button { @include breakpoint(l-three) { padding: 0.9em 0.7em; } }
 			}
 		}
-		&.dashboard, &.llp { 
+		&.dashboard, &.llp {
 			height: auto;
 			padding: 0;
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
 			p { font-size: 1.25em; margin: 0 0 60px 0; }
-			img { vertical-align: bottom; } 
+			img { vertical-align: bottom; }
 		}
 		&.llp { background: #FFF; }
 		&.platform {
 			background: #FFF;
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
-			p { font-size: 1.25em; margin: 0 0 40px 0; } 
-			.col.two { 
+			p { font-size: 1.25em; margin: 0 0 40px 0; }
+			.col.two {
 				display: inline-block;
 				height: 80px;
 				padding: 0 16px;
@@ -324,7 +324,7 @@ nav.omenu {
 			h4 { margin: 0; }
 			p { color: #999; font-size: 0.9em; }
 		}
-		&.computer { 
+		&.computer {
 			margin: 20px 0 80px 0;
 			@include breakpoint(l-three) { margin: 0; }
 		}
@@ -334,11 +334,11 @@ nav.omenu {
 			h2 { margin-top: 20px; }
 		}
 		&.deglocator {
-			@include breakpoint(l-three) { 
+			@include breakpoint(l-three) {
 				text-align: center;
 				h2, ul { text-align: left; }
 				img { margin-top: 20px; }
-			} 
+			}
 		}
 		&.solution { @include breakpoint(l-three) { text-align: center; } }
 		&.in-stock-retailers {
@@ -377,7 +377,7 @@ nav.omenu {
 		}
 		.section-img {
 			text-align: center;
-			img { 
+			img {
 				margin: 100px 0 0 0;
 				@include breakpoint(l-three) { margin: 48px 0 0 0; }
 			}
@@ -391,7 +391,7 @@ section.testimonials {
 	background: #FFF;
 	padding: 80px 0;
 	@include breakpoint(l-three) { padding: 40px 0; }
-	p { 
+	p {
 		margin: 0 0 60px 0;
 		@include breakpoint(l-three) { margin: 0 0 32px 0; }
 	}
@@ -401,7 +401,7 @@ section.testimonials .recommendation {
 	margin: 0 20px 0 0;
 	opacity: 0.5;
 	padding: 0 0 10px 0;
-	&.active { 
+	&.active {
 		border-bottom: 2px solid #DDD;
 		opacity: 1;
 		@include breakpoint(l-three) { border: none; }
@@ -432,7 +432,7 @@ section.testimonials .recommendation {
 		vertical-align: middle;
 		width: 60%;
 		h5 { line-height: 1; margin: 0 0 8px 0; }
-		span { 
+		span {
 			color: #999;
 			display: block;
 			font-size: 0.8em;
@@ -452,7 +452,7 @@ section.testimonials .recommendation {
 		color: #FFF;
 		margin: 0 0 4px 0;
 	}
-	span { 
+	span {
 		color: #7A0D1B;
 		font-size: 0.9em;
 		font-weight: 600;
@@ -465,7 +465,7 @@ section.testimonials .recommendation {
 .content {
 	margin: 100px 0;
 	@include breakpoint(l-three) { margin: 40px 0; }
-	&.demo { 
+	&.demo {
 		margin: 0;
 		padding: 20px 0 100px 0;
 		@include breakpoint(l-three) {
@@ -502,7 +502,7 @@ section.testimonials .recommendation {
 		margin: 0;
 	}
 	img { margin: 0 0 40px 0; }
-	ul { 
+	ul {
 		list-style: none;
 		margin: 0 0 32px 0;
 		li {
@@ -630,19 +630,19 @@ section.testimonials .recommendation {
 			background: #373C46;
 			h2 { color: #FFF; }
 		}
-		&.dashboard { 
+		&.dashboard {
 			height: auto;
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
-			p { font-size: 1.25em; margin: 0 0 60px 0; } 
+			p { font-size: 1.25em; margin: 0 0 60px 0; }
 		}
-		&.platform { 
+		&.platform {
 			background: #FFF;
 			height: 400px;
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
-			p { font-size: 1.25em; margin: 0 0 40px 0; } 
-			.col.two { 
+			p { font-size: 1.25em; margin: 0 0 40px 0; }
+			.col.two {
 				display: inline-block;
 				height: 80px;
 				padding: 0 16px;
@@ -653,7 +653,7 @@ section.testimonials .recommendation {
 			height: 400px;
 			text-align: center;
 			h2 { margin: 80px 0 32px 0; }
-			p { font-size: 1.25em; margin: 0 0 56px 0; } 
+			p { font-size: 1.25em; margin: 0 0 56px 0; }
 			.sell {
 				span {
 					color: #999;
@@ -672,7 +672,7 @@ section.testimonials .recommendation {
 				}
 			}
 		}
-		&.white { 
+		&.white {
 			background: #FFF;
 			img {
 				margin: 100px 0 0 0;
@@ -870,7 +870,7 @@ article.posts {
 
 // Footer
 footer {
-	background: #373C46 url(../images/bg-footer.png) top center no-repeat;
+	background: #373C46 url(../img/bg-footer.png) top center no-repeat;
 	border-top: 4px solid #252930;
 	height: 220px;
 	padding: 80px 0 60px 0;
@@ -906,7 +906,7 @@ footer {
 			line-height: 2;
 			&:hover { color: #FFF; text-decoration: none; }
 		}
-		&.legal a, span { 
+		&.legal a, span {
 			color: #CCC;
 			display: inline-block;
 			font-size: 0.9em;
@@ -920,8 +920,8 @@ footer {
 			&:hover { color: #FFF; }
 		}
 	}
-	p { 
-		color: #FFF; 
+	p {
+		color: #FFF;
 		text-align: right;
 		@include breakpoint(l-three) {
 			margin: 0;
@@ -972,4 +972,3 @@ footer {
 		}
 	}
 }
-
