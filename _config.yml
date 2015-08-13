@@ -1,6 +1,9 @@
-lsi: false
-markdown: rdiscount
-highlighter: pygments
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: /:title
 site_url: 'http://www..donde.io'
 exclude: ['Rakefile', 'README.md', 'config.rb']

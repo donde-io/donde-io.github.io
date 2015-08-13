@@ -1,0 +1,43 @@
+/*
+*  Dónde Style Guide
+*  Copyright Dónde 2015
+*  developer.donde.io
+*/
+
+
+// ----------
+// Utilities
+
+// Clear
+%clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Screensize Visibility
+#desktop {
+  display: block;
+  visibility: visible;
+  @include breakpoint(l-three) {
+    display: none;
+    visibility: hidden;
+  }
+}
+#mobile {
+  display: none;
+  visibility: hidden;
+  @include breakpoint(l-three) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+// Box Sizing
+@mixin box-sizing($box) {
+  // content-box, border-box, inherit
+  -webkit-box-sizing: $box;
+  -moz-box-sizing: $box;
+  -ms-box-sizing: $box;
+  box-sizing: $box;
+}
