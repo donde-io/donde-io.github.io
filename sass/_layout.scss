@@ -107,3 +107,52 @@ a.mobile-login {
   @include breakpoint(l-three) { display: block; visibility: visible; }
   &:hover, &:active { text-decoration: none; }
 }
+
+
+// Footer
+footer {
+	padding: 120px 0 40px 0;
+	width: 100%;
+	@include breakpoint(l-three) { padding: 40px 0 32px 0; }
+	.row { margin: 0; }
+	.site-links { margin: 0 0 40px 0; }
+  h5 {
+    color: #999;
+    margin: 0 0 32px 0;
+  }
+	nav {
+		width: 100%;
+		a {
+			color: #666;
+			display: block;
+      font-size: 0.78em;
+			font-weight: 600;
+			line-height: 1;
+      margin: 0 0 16px 0;
+      text-transform: uppercase;
+			&:hover, &:active { color: #000; text-decoration: none; }
+		}
+		&.legal a, span {
+			color: #AAA;
+			display: inline-block;
+			font-size: 0.9em;
+			font-weight: 300;
+			line-height: 1.4;
+      text-transform: none;
+		}
+		span { padding: 0 16px 0 0; }
+		&.legal a {
+			border-left: 1px solid #DDD;
+			padding: 0 20px;
+			&:hover, &:active { color: #000; text-decoration: none; }
+		}
+	}
+	p {
+		color: #AAA;
+		text-align: right;
+		@include breakpoint(l-three) {
+			margin: 0;
+			text-align: center;
+		}
+	}
+}
