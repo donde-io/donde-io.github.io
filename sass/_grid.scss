@@ -1,12 +1,12 @@
 /*
 *  Dónde Style Guide
-*  Copyright Dónde 2015
+*  Copyright Dónde 2013-2015
 *  developer.donde.io
 */
 
 
 // ----------
-// Responsive Fluid Grid 
+// Responsive Fluid Grid
 
 .container {
   margin: 0 4%;
@@ -54,14 +54,26 @@
 .container .col.off-ten               { margin-left: 83.333%; }
 .container .col.off-eleven            { margin-left: 91.666%; }
 
+
+// ----------
+// Large Screen Grid
+@media (min-width: 1320px) {
+  .container {
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
+
+
 // ----------
 // Tablet Grid
 @media (min-width: 768px) and (max-width: 959px) {
-  .donde-container {
-    margin: 0 ;
+  .container {
+    margin: 0 6%;
     width: 88%;
   }
 }
+
 
 // ----------
 // Mobile Grid

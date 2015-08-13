@@ -7,8 +7,31 @@
 </head>
 <body>
 
+	<a class="mobile-login" href="https://dashboard.donde.io/users/sign_in">Log In</a>
+	<header role="banner">
+		<div class="container">
+			<a class="login" href="https://dashboard.donde.io/users/sign_in">Log In</a>
+			<a class="logo" href="/">
+				<img class="web" src="/img/logo-donde.svg" alt="Dónde Logo"/>
+				<img class="mobile" src="/img/logo-donde-icon.svg" alt="Dónde Logo"/>
+			</a>
+			<nav class="navigation" role="navigation">
+				{% for link in site.navigation %}
+	        {% assign active = nil %}
+	        {% if page.url contains link.url %}
+	          {% assign active = 'active' %}
+	        {% endif %}
+	        <a class="{{ active }}" href="{{ link.url }}">{{ link.title }}</a>
+	    	{% endfor %}
+				<a class="demo" href="#">Demo</a>
+			</nav>
+		</div>
+	</header>
 
-	{{content}}
+
+	<main role="main">
+		{{content}}
+	</main>
 
 
 	{% include footer.html %}

@@ -1,0 +1,109 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Layout
+
+// Header
+header {
+	background: #282D34;
+	height: 120px;
+	padding: 36px 0 40px 0;
+	@include box-sizing(border-box);
+	@extend %clear;
+  @include breakpoint(l-three) {
+    height: 72px;
+    padding: 16px 0;
+  }
+	a.logo {
+		display: block;
+		float: left;
+		line-height: 1;
+		width: 120px;
+    @include breakpoint(l-three) {
+      height: 40px;
+      width: 40px;
+    }
+    img.web { @include breakpoint(l-three) { display: none; visibility: hidden; } }
+    img.mobile {
+      display: none;
+      visibility: hidden;
+      @include breakpoint(l-three) { display: block; visibility: visible; }
+    }
+	}
+	nav.navigation {
+		float: left;
+    @include breakpoint(l-three) {
+      margin: 0 0 0 20px;
+      width: calc(100% - 60px);
+    }
+		a {
+			color: #FFF;
+			display: inline-block;
+			font-size: 0.84em;
+			font-weight: 600;
+			line-height: 1;
+			margin: 0 0 0 40px;
+			padding: 18px 0 4px 0;
+			text-transform: uppercase;
+      @include breakpoint(l-four) { margin: 0 0 0 32px; }
+      @include breakpoint(l-three) {
+        font-size: 0.78em;
+        margin: 0 20px 0 0;
+        padding: 16px 0 4px 0;
+      }
+      @include breakpoint(l-one) {
+        span { display: none; visibility: hidden; }
+      }
+      // Decrease Margins on iPhone 5
+      @media (max-width: 320px) { margin: 0 10px 0 0; }
+      &.demo {
+        @include breakpoint(l-three) { margin: 0; }
+        // Hide Demo on iPhone 5
+        @media (max-width: 320px) { display: none; visibility: hidden; }
+      }
+			&:hover, &:active, &.active {
+				border-bottom: 3px solid #349CA5;
+				text-decoration: none;
+			}
+		}
+	}
+	a.login {
+		border: 2px solid #FFF;
+		border-radius: 4px;
+		color: #FFF;
+		float: right;
+		font-size: 0.84em;
+		font-weight: 600;
+		height: 40px;
+		line-height: 36px;
+		padding: 0 20px;
+
+		@include box-sizing(border-box);
+    @include breakpoint(l-three) { display: none; visibility: hidden; }
+		&:hover, &:active, &.active {
+			background: #FFF;
+			color: #282D34;
+			text-decoration: none;
+		}
+	}
+}
+a.mobile-login {
+  background: #349CA5;
+  color: #FFF;
+  display: none;
+  font-size: 0.84em;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: hidden;
+  width: 100%;
+  @include breakpoint(l-three) { display: block; visibility: visible; }
+  &:hover, &:active { text-decoration: none; }
+}

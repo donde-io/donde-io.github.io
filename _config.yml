@@ -1,3 +1,11 @@
+navigation:
+  - title: Products
+    url: /products/index.html
+  - title: Pricing<span> & Signup</span>
+    url: /pricing/index.html
+  - title: Customers
+    url: /customers/index.html
+
 markdown: kramdown
 
 kramdown:
