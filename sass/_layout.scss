@@ -156,3 +156,37 @@ footer {
 		}
 	}
 }
+
+
+// Sections
+section {
+	padding: 80px 0;
+	@include breakpoint(l-three) { padding: 40px 0; }
+	&.white { background: #FFF; }
+	h3 { margin: 0 0 40px 0; }
+	p {
+		font-size: 1.125em;
+		margin: 0 0 40px 0;
+	}
+	.features-list {
+		.fl-item {
+			margin: 0 0 32px 0;
+			@extend %clear;
+			.fl-icon {
+				border: 2px solid #666;
+				border-radius: 32px;
+				float: left;
+				height: 60px;
+				width: 60px;
+			}
+			.fl-info {
+				float: left;
+				font-size: 0.9em;
+				padding: 0 0 0 32px;
+				width: calc(100% - 64px);
+				@include box-sizing(border-box);
+				strong { text-transform: uppercase; }
+			}
+		}
+	}
+}
