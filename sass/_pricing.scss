@@ -16,7 +16,7 @@
 		margin: 0 0 60px 0;
 		text-align: center;
 	}
-	h5 {
+	h6 {
 		margin: 0;
 		text-align: center;
 		a {
@@ -100,4 +100,8 @@
 			text-align: center;
 		}
 	}
+}
+
+.pricing-questions {
+	h6, p { text-align: left; }
 }
