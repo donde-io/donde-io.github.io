@@ -1,0 +1,42 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Contact Page
+
+ul.contact-social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	li a {
+  	background: #999;
+  	border-radius: 4px;
+  	color: #FFF;
+  	display: block;
+  	float: left;
+  	font-size: 1.4em;
+  	height: 40px;
+  	line-height: 40px;
+  	margin: 0 10px 10px 0;
+  	width: 40px;
+  	text-align: center;
+  	text-decoration: none;
+  	-webkit-transition: all 0.3s ease;
+  	-moz-transition: all 0.3s ease;
+  	transition: all 0.3s ease;
+  	&.facebook:hover { background: #3B5998; }
+  	&.twitter:hover { background: #00ACED; }
+  	&.linkedin:hover { background: #007BB6; }
+  	&.googleplus:hover { background: #DD4B39; }
+  	&.pinterest:hover { background: #CB2027; }
+  	&.dribbble:hover { background: #EA4C89; }
+  	&.github:hover { background: #333; }
+  	&.youtube:hover { background: #BB0000; }
+  	.icon { margin: 0; }
+  }
+}
