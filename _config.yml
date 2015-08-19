@@ -3,8 +3,6 @@ navigation:
     url: /products
   - title: Pricing<span> & Signup</span>
     url: /pricing
-  - title: Customers
-    url: /customers
 
 markdown: kramdown
 

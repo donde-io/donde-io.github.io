@@ -32,12 +32,14 @@
 	width: 100%;
 	@extend %clear;
 	.phead {
-		.ph1, .ph2, .ph3 {
+		.ph1, .ph2, .ph3, .ph4 {
 			background: #FFF;
+			border-right: 1px solid #DDD;
 			float: left;
-			width: 33.33%;
+			width: 25%;
 			@include box-sizing(border-box);
 			@include breakpoint(l-one) {
+				border-right: none;
 				float: none;
 				margin: 0 0 12px 0;
 				width: 100%;
@@ -48,7 +50,8 @@
 			border-left: 1px solid #DDD;
 			@include breakpoint(l-one) { border: none; }
 		}
-		.ph1, .ph3 {
+		.ph4 { border-right: none; }
+		.ph1, .ph3, .ph4 {
 			margin-top: 24px;
 			@include breakpoint(l-one) { margin-top: 0; }
 		}
