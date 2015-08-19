@@ -1,0 +1,28 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Product Page
+
+.hero-products {
+	background: #282D34;
+	padding: 120px 0 60px;
+	.bx-wrapper {
+		margin: 0 auto;
+		.bx-viewport {
+			background: inherit;
+			border: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		.bx-pager { bottom: -32px; }
+	}
+	h1 { color: #FFF; }
+	p { color: #CCC; margin: 0 0 40px 0; }
+	.button.teal { margin: 0 0 80px 0; }
+}
