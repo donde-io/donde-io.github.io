@@ -10,7 +10,8 @@
 
 .hero-products {
 	background: #282D34;
-	padding: 120px 0 60px;
+	padding: 80px 0 60px;
+	text-align: center;
 	.bx-wrapper {
 		margin: 0 auto;
 		.bx-viewport {
@@ -23,15 +24,55 @@
 		.bx-pager { bottom: -32px; }
 	}
 	h1 { color: #FFF; }
-	p { color: #CCC; margin: 0 0 40px 0; }
+	p {
+		color: #CCC;
+		font-size: 1.2em;
+		margin: 0 0 40px 0;
+	}
 	.button.teal { margin: 0 0 80px 0; }
 }
-
 img.products-dashboard {
 	margin: -32px 0 0 0;
 	position: absolute;
 	@include breakpoint(l-three) {
 		margin: 0 0 40px 0;
 		position: relative;
+	}
+}
+
+
+// Store Locator Page
+.hero-store-locator {
+	background: #282D34;
+	padding: 60px 0;
+	text-align: center;
+	h1 {
+		color: #FFF;
+		margin: 0 0 60px 0;
+	}
+}
+
+
+// Local Landing Page
+.hero-local-landing-page {
+	background: #282D34;
+	padding: 60px 0 0 0;
+	text-align: center;
+	h1 {
+		color: #FFF;
+		margin: 0 0 60px 0;
+	}
+}
+img.products-local-landing-page { vertical-align: bottom; }
+
+
+// Promotions Page
+.hero-promotion {
+	background: #282D34;
+	padding: 60px 0;
+	text-align: center;
+	h1 {
+		color: #FFF;
+		margin: 0 0 60px 0;
 	}
 }
