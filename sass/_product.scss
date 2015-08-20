@@ -26,3 +26,12 @@
 	p { color: #CCC; margin: 0 0 40px 0; }
 	.button.teal { margin: 0 0 80px 0; }
 }
+
+img.products-dashboard {
+	margin: -32px 0 0 0;
+	position: absolute;
+	@include breakpoint(l-three) {
+		margin: 0 0 40px 0;
+		position: relative;
+	}
+}
