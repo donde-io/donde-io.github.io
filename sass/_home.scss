@@ -12,7 +12,13 @@
 	background: #282D34;
 	height: 600px;
 	padding: 120px 0 0 0;
+	position: relative;
 	@include box-sizing(border-box);
+	img {
+		bottom: 0;
+		position: absolute;
+		right: 0;
+	}
 	h1 {
 		color: #FFF;
 		margin: 0 0 40px 0;
