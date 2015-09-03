@@ -65,6 +65,12 @@
 				color: #222;
 				font-size: 3.6em;
 				span { font-size: 0.25em; }
+				&.talk {
+					font-size: 2em;
+			    font-weight: 600;
+					line-height: 2.6;
+			    min-height: 92px;
+				}
 			}
 		}
 		.ph2 .head { padding: 19px 0 0 0; }
