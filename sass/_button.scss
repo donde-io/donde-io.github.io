@@ -1,0 +1,201 @@
+/*
+*  Dónde Style Guide
+*  Copyright Dónde 2015
+*  developer.donde.io
+*/
+
+
+// ----------
+// Button
+
+.button, a.button, button.button {
+  background: none;
+  border: 2px solid #CCC;
+  border-radius: 4px;
+  color: #CCC;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.9em;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+  -moz-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+  -o-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+  -ms-transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+  transition: opacity 0.25s ease, background-color 0.25s ease, color 0.25s ease, background 0.25s ease;
+  @include box-sizing(border-box);
+  &:hover, &:active, &.active {
+    background: #CCC;
+    color: #FFF;
+  }
+}
+
+
+// Colors
+.red.button {
+  border: 2px solid #EC1B52;
+  color: #EC1B52;
+  &:hover, &:active, &.active {
+    background: #EC1B52;
+    color: #FFF;
+  }
+}
+.orange.button {
+  border: 2px solid #F47942;
+  color: #F47942;
+  &:hover, &:active, &.active {
+    background: #F47942;
+    color: #FFF;
+  }
+}
+.yellow.button {
+  border: 2px solid #FC3;
+  color: #FC3;
+  &:hover, &:active, &.active {
+    background: #FC3;
+    color: #FFF;
+  }
+}
+.green.button {
+  border: 2px solid #51C197;
+  color: #51C197;
+  &:hover, &:active, &.active {
+    background: #51C197;
+    color: #FFF;
+  }
+}
+.teal.button {
+  border: 2px solid #349CA5;
+  color: #349CA5;
+  &:hover, &:active, &.active {
+    background: #349CA5;
+    color: #FFF;
+  }
+}
+.blue.button {
+  border: 2px solid #06F;
+  color: #06F;
+  &:hover, &:active, &.active {
+    background: #06F;
+    color: #FFF;
+  }
+}
+.purple.button {
+  border: 2px solid #5D4A62;
+  color: #5D4A62;
+  &:hover, &:active, &.active {
+    background: #5D4A62;
+    color: #FFF;
+  }
+}
+.pink.button {
+  border: 2px solid #E32F6C;
+  color: #E32F6C;
+  &:hover, &:active, &.active {
+    background: #E32F6C;
+    color: #FFF;
+  }
+}
+.white.button {
+  border: 2px solid #FFF;
+  color: #FFF;
+  &:hover, &:active, &.active {
+    background: #FFF;
+    color: #999;
+  }
+}
+.black25.button {
+  border: 2px solid rgba(0,0,0,0.25);
+  color: rgba(0,0,0,0.25);
+  &:hover, &:active, &.active {
+    background: rgba(0,0,0,0.25);
+    color: #FFF;
+  }
+}
+.black50.button {
+  border: 2px solid rgba(0,0,0,0.5);
+  color: rgba(0,0,0,0.5);
+  &:hover, &:active, &.active {
+    background: rgba(0,0,0,0.5);
+    color: #FFF;
+  }
+}
+.black75.button {
+  border: 2px solid rgba(0,0,0,0.75);
+  color: rgba(0,0,0,0.75);
+  &:hover, &:active, &.active {
+    background: rgba(0,0,0,0.75);
+    color: #FFF;
+  }
+}
+.black.button {
+  border: 2px solid #000;
+  color: #000;
+  &:hover, &:active, &.active {
+    background: #000;
+    color: #FFF;
+  }
+}
+
+
+// Sizes
+.mini.button { font-size: 0.8em; padding: 4px 8px; }
+.small.button { font-size: 0.8em; padding: 8px 12px; }
+.large.button {
+  border-width: 3px;
+  font-size: 1em;
+  padding: 13px 19px;
+}
+.big.button {
+  border-width: 4px;
+  font-size: 1.1em;
+  padding: 16px 22px;
+}
+
+
+// Groups
+.buttons {
+  display: inline-block;
+  vertical-align: middle;
+  @extend %clear;
+  .button {
+    border-left: none;
+    border-radius: 0;
+    float: left;
+    &:first-child {
+      border-left: 2px solid #CCC;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      margin-left: 0;
+      &.red { border-left: 2px solid #EC1B52; }
+      &.orange { border-left: 2px solid #F47942; }
+      &.yellow { border-left: 2px solid #FC3; }
+      &.green { border-left: 2px solid #51C197; }
+      &.teal { border-left: 2px solid #349CA5; }
+      &.blue { border-left: 2px solid #06F; }
+      &.purple { border-left: 2px solid #5D4A62; }
+      &.pink { border-left: 2px solid #E32F6C; }
+      &.white { border-left: 2px solid #FFF; }
+      &.black25 { border-left: 2px solid rgba(0,0,0,0.25); }
+      &.black50 { border-left: 2px solid rgba(0,0,0,0.5); }
+      &.black75 { border-left: 2px solid rgba(0,0,0,0.75); }
+      &.black { border-left: 2px solid #000; }
+    }
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+}

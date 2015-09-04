@@ -1,0 +1,216 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Layout
+
+// Header
+header {
+	background: #282D34;
+	height: 120px;
+	padding: 36px 0 40px 0;
+	@include box-sizing(border-box);
+	@extend %clear;
+  @include breakpoint(l-three) {
+    height: 72px;
+    padding: 16px 0;
+  }
+	a.logo {
+		display: block;
+		float: left;
+		line-height: 1;
+		width: 120px;
+    @include breakpoint(l-three) {
+      height: 40px;
+      width: 40px;
+    }
+    img.web { @include breakpoint(l-three) { display: none; visibility: hidden; } }
+    img.mobile {
+      display: none;
+      visibility: hidden;
+      @include breakpoint(l-three) { display: block; visibility: visible; }
+    }
+	}
+	nav.navigation {
+		float: left;
+    @include breakpoint(l-three) {
+      margin: 0 0 0 20px;
+      width: calc(100% - 60px);
+    }
+		a {
+			color: #FFF;
+			display: inline-block;
+			font-size: 0.84em;
+			font-weight: 600;
+			line-height: 1;
+			margin: 0 0 0 40px;
+			padding: 18px 0 4px 0;
+			text-transform: uppercase;
+      @include breakpoint(l-four) { margin: 0 0 0 32px; }
+      @include breakpoint(l-three) {
+        font-size: 0.78em;
+        margin: 0 20px 0 0;
+        padding: 16px 0 4px 0;
+      }
+      @include breakpoint(l-one) {
+        span { display: none; visibility: hidden; }
+      }
+      // Decrease Margins on iPhone 5
+      @media (max-width: 320px) { margin: 0 10px 0 0; }
+      &.demo {
+        @include breakpoint(l-three) { margin: 0; }
+        // Hide Demo on iPhone 5
+        @media (max-width: 320px) { display: none; visibility: hidden; }
+      }
+			&:hover, &:active, &.active {
+				border-bottom: 3px solid #349CA5;
+				text-decoration: none;
+			}
+		}
+	}
+	a.login {
+		border: 2px solid #FFF;
+		border-radius: 4px;
+		color: #FFF;
+		float: right;
+		font-size: 0.84em;
+		font-weight: 600;
+		height: 40px;
+		line-height: 36px;
+		padding: 0 20px;
+
+		@include box-sizing(border-box);
+    @include breakpoint(l-three) { display: none; visibility: hidden; }
+		&:hover, &:active, &.active {
+			background: #FFF;
+			color: #282D34;
+			text-decoration: none;
+		}
+	}
+}
+a.mobile-login {
+  background: #349CA5;
+  color: #FFF;
+  display: none;
+  font-size: 0.84em;
+  font-weight: 600;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  visibility: hidden;
+  width: 100%;
+  @include breakpoint(l-three) { display: block; visibility: visible; }
+  &:hover, &:active { text-decoration: none; }
+}
+
+
+// Footer
+footer {
+	padding: 120px 0 40px 0;
+	width: 100%;
+	@include breakpoint(l-three) { padding: 40px 0 32px 0; }
+	.row { margin: 0; }
+	.site-links { margin: 0 0 40px 0; }
+  h5 {
+    color: #999;
+    margin: 0 0 32px 0;
+  }
+	nav {
+		width: 100%;
+		a {
+			color: #666;
+			display: block;
+      font-size: 0.78em;
+			font-weight: 600;
+			line-height: 1;
+      margin: 0 0 16px 0;
+      text-transform: uppercase;
+			&:hover, &:active { color: #000; text-decoration: none; }
+		}
+		&.legal a, span {
+			color: #AAA;
+			display: inline-block;
+			font-size: 0.9em;
+			font-weight: 300;
+			line-height: 1.4;
+      text-transform: none;
+		}
+		span { padding: 0 16px 0 0; }
+		&.legal a {
+			border-left: 1px solid #DDD;
+			padding: 0 20px;
+			&:hover, &:active { color: #000; text-decoration: none; }
+		}
+	}
+	p {
+		color: #AAA;
+		text-align: right;
+		@include breakpoint(l-three) {
+			margin: 0;
+			text-align: center;
+		}
+	}
+}
+
+
+// Sections
+section {
+	padding: 120px 0;
+	@include breakpoint(l-three) { padding: 40px 0; }
+	&.white { background: #FFF; }
+	&.highlight { text-align: center; }
+	&.no-padding {
+		padding: 0;
+		text-align: center;
+	}
+	&.no-padding-bottom { padding-bottom: 0; }
+	h2, h3 { margin: 0 0 40px 0; }
+	p {
+		font-size: 1.125em;
+		margin: 0 0 40px 0;
+		&.highlight { font-size: 1.25em; }
+		&.no-margin { margin: 0; }
+	}
+	nav {
+		margin: 0 0 20px 0;
+		a {
+			color: #349CA5;
+			font-weight: 600;
+			text-transform: uppercase;
+			&:hover, &:active {
+				color: #333;
+				text-decoration: none;
+			}
+		}
+		span {
+			font-weight: 600;
+			margin: 0 12px;
+		}
+	}
+	.features-list {
+		.fl-item {
+			margin: 0 0 32px 0;
+			@extend %clear;
+			.fl-icon {
+				border: 2px solid #666;
+				border-radius: 32px;
+				float: left;
+				height: 60px;
+				width: 60px;
+			}
+			.fl-info {
+				float: left;
+				font-size: 0.9em;
+				padding: 0 0 0 32px;
+				width: calc(100% - 64px);
+				@include box-sizing(border-box);
+				strong { text-transform: uppercase; }
+			}
+		}
+	}
+}

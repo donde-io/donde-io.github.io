@@ -1,6 +1,15 @@
-lsi: false
-markdown: rdiscount
-highlighter: pygments
+navigation:
+  - title: Products
+    url: /products
+  - title: Pricing<span> & Signup</span>
+    url: /pricing
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 permalink: /:title
 site_url: 'http://www..donde.io'
 exclude: ['Rakefile', 'README.md', 'config.rb']

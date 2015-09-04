@@ -1,0 +1,116 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Pricing Page
+
+.hero-pricing {
+	background: #282D34;
+	padding: 40px 0 60px 0;
+	h1 {
+		color: #FFF;
+		margin: 0 0 60px 0;
+		text-align: center;
+	}
+	h6 {
+		margin: 0;
+		text-align: center;
+		a {
+			color: rgba(255, 255, 255, 0.5);
+			&:hover, &:active { color: #FFF; text-decoration: none; }
+		}
+	}
+}
+
+// Pricing Table
+.pricing-table {
+	margin: 0 0 48px 0;
+	width: 100%;
+	@extend %clear;
+	.phead {
+		.ph1, .ph2, .ph3, .ph4 {
+			background: #FFF;
+			border-right: 1px solid #DDD;
+			float: left;
+			width: 25%;
+			@include box-sizing(border-box);
+			@include breakpoint(l-one) {
+				border-right: none;
+				float: none;
+				margin: 0 0 12px 0;
+				width: 100%;
+			}
+		}
+		.ph2 {
+			border-right: 1px solid #DDD;
+			border-left: 1px solid #DDD;
+			@include breakpoint(l-one) { border: none; }
+		}
+		.ph4 { border-right: none; }
+		.ph1, .ph3, .ph4 {
+			margin-top: 24px;
+			@include breakpoint(l-one) { margin-top: 0; }
+		}
+		.head {
+			background: #FAFAFA;
+			border-bottom: 1px solid #DDD;
+			padding: 40px 0 0 0;
+			text-align: center;
+			h5 { margin: 0; }
+			p {
+				color: #222;
+				font-size: 3.6em;
+				span { font-size: 0.25em; }
+				&.talk {
+					font-size: 2em;
+			    font-weight: 600;
+					line-height: 2.6;
+			    min-height: 92px;
+				}
+			}
+		}
+		.ph2 .head { padding: 19px 0 0 0; }
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 24px 32px;
+			@include breakpoint(l-one) { height: auto; }
+			li {
+				border-bottom: 1px solid #EDEDED;
+				font-size: 0.9em;
+				line-height: 1.4;
+				padding: 10px 0;
+				text-align: center;
+				&:last-child { border-bottom: none; }
+			}
+		}
+		.foot {
+			background: #FAFAFA;
+			border-top: 1px solid #DDD;
+			border-bottom: 1px solid #DDD;
+			padding: 16px 20px;
+			a.button {
+				width: 100%;
+			}
+		}
+		span.popular {
+			background: #349CA5;
+			color: #FFF;
+			display: block;
+			font-size: 0.8em;
+			font-weight: 600;
+			margin: 0 -1px;
+			padding: 12px 0 13px 0;
+			text-transform: uppercase;
+			text-align: center;
+		}
+	}
+}
+
+.pricing-questions {
+	h6, p { text-align: left; }
+}
