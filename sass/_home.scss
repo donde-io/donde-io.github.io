@@ -14,8 +14,18 @@
 	padding: 120px 0 0 0;
 	position: relative;
 	@include box-sizing(border-box);
+	@include breakpoint(l-three) {
+		height: auto;
+    padding: 40px 0 60px 0;
+		img { opacity: 0.2; }
+		h1 {
+			font-size: 2em;
+			margin: 0 0 32px 0;
+		}
+	}
 	img {
 		bottom: 0;
+		opacity: 0.3;
 		position: absolute;
 		right: 0;
 	}
