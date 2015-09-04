@@ -1,0 +1,303 @@
+/*
+* Get Structure
+* Copyright Ace Eight of Spades 2013
+* www.getstructu.re
+*/
+
+
+// ----------
+// Input
+
+.input {
+  display: inline-block;
+  position: relative;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.input input {
+  width: 100%;
+  font-family: "Helvetica Neue", "Helvetica", Arial;
+  margin: 0em;
+  padding: 0.65em 1em;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  outline: none;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 0.3125em;
+  -webkit-transition: background-color 0.3s ease-out, -webkit-box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: background-color 0.3s ease-out, box-shadow 0.2s ease, border-color 0.2s ease;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*--------------------
+      Placeholder
+---------------------*/
+
+/* browsers require these rules separate */
+
+.input::-webkit-input-placeholder {
+  color: #BBBBBB;
+}
+
+.input::-moz-placeholder {
+  color: #BBBBBB;
+}
+
+/*******************************
+            States
+*******************************/
+
+/*--------------------
+        Active
+---------------------*/
+
+.input input:active,
+.input.down input {
+  border-color: rgba(0, 0, 0, 0.3);
+  background-color: #FAFAFA;
+}
+
+/*--------------------
+        Loading
+---------------------*/
+
+.loading.input > .icon {
+  background: url(../images/loader-mini.gif) no-repeat 50% 50%;
+}
+
+.loading.input > .icon:before,
+.loading.input > .icon:after {
+  display: none;
+}
+
+/*--------------------
+        Focus
+---------------------*/
+
+.input.focus input,
+.input input:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.input.focus input input::-webkit-input-placeholder,
+.input input:focus input::-webkit-input-placeholder {
+  color: #AAAAAA;
+}
+
+.input.focus input input::-moz-placeholder,
+.input input:focus input::-moz-placeholder {
+  color: #AAAAAA;
+}
+
+/*--------------------
+        Error
+---------------------*/
+
+.input.error input {
+  background-color: #FFFAFA;
+  border-color: #E7BEBE;
+  color: #D95C5C;
+}
+
+/* Error Placeholder */
+
+.input.error input ::-webkit-input-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+
+.input.error input ::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.4);
+}
+
+.input.error input :focus::-webkit-input-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+
+.input.error input :focus::-moz-placeholder {
+  color: rgba(255, 80, 80, 0.7);
+}
+
+/*******************************
+           Variations
+*******************************/
+
+/*--------------------
+      Transparent
+---------------------*/
+
+.transparent.input input {
+  border: none;
+  background-color: transparent;
+}
+
+/*--------------------
+         Icon
+---------------------*/
+
+.icon.input > .icon {
+  cursor: default;
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  right: 0px;
+  margin: 0em;
+  width: 2.6em;
+  height: 100%;
+  padding-top: 0.82em;
+  text-align: center;
+  border-radius: 0em 0.3125em 0.3125em 0em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+
+.icon.input > .link.icon {
+  cursor: pointer;
+}
+
+.icon.input input {
+  padding-right: 3em !important;
+}
+
+.icon.input > .circular.icon {
+  top: 0.35em;
+  right: 0.5em;
+}
+
+/* Left Side */
+
+.left.icon.input > .icon {
+  right: auto;
+  left: 1px;
+  border-radius: 0.3125em 0em 0em 0.3125em;
+}
+
+.left.icon.input > .circular.icon {
+  right: auto;
+  left: 0.5em;
+}
+
+.left.icon.input > input {
+  padding-left: 3em !important;
+  padding-right: 1.2em !important;
+}
+
+/* Focus */
+
+.icon.input > input:focus ~ .icon {
+  opacity: 1;
+}
+
+/*--------------------
+        Labeled
+---------------------*/
+
+.labeled.input .corner.label {
+  font-size: 0.7em;
+  border-radius: 0 0.3125em;
+}
+
+.labeled.input .left.corner.label {
+  border-radius: 0.3125em 0;
+}
+
+.labeled.input input {
+  padding-right: 2.5em !important;
+}
+
+/* Spacing with corner label */
+
+.labeled.icon.input:not(.left) > input {
+  padding-right: 3.25em !important;
+}
+
+.labeled.icon.input:not(.left) > .icon {
+  margin-right: 1.25em;
+}
+
+/*--------------------
+        Action
+---------------------*/
+
+.action.input {
+  display: table;
+}
+
+.action.input > input {
+  display: table-cell;
+  border-top-right-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  border-right: none;
+}
+
+.action.input > .button,
+.action.input > .buttons {
+  display: table-cell;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  white-space: nowrap;
+}
+
+.action.input > .button > .icon,
+.action.input > .buttons > .button > .icon {
+  display: inline;
+  vertical-align: top;
+}
+
+.fluid.action.input {
+  display: table;
+  width: 100%;
+}
+
+.fluid.action.input > .button {
+  width: 0.01%;
+}
+
+/*--------------------
+        Fluid
+---------------------*/
+
+.fluid.input {
+  display: block;
+}
+
+/*--------------------
+        Size
+---------------------*/
+
+.mini.input {
+  font-size: 0.8125em;
+}
+
+.small.input {
+  font-size: 0.875em;
+}
+
+.input {
+  font-size: 1em;
+}
+
+.large.input {
+  font-size: 1.125em;
+}
+
+.big.input {
+  font-size: 1.25em;
+}
+
+.huge.input {
+  font-size: 1.375em;
+}
+
+.massive.input {
+  font-size: 1.5em;
+}
