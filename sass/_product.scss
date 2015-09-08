@@ -37,7 +37,9 @@ img.products-dashboard {
 	@include breakpoint(l-three) {
 		margin: 0 0 40px 0;
 		position: relative;
+		width: 92%;
 	}
+	@include breakpoint(l-one) { margin: 0 0 24px 0; }
 }
 
 

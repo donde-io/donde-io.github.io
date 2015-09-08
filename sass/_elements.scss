@@ -40,12 +40,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1, h2 { margin: 0 0 32px 0; }
 h5, h6 { margin: 0 0 12px 0; }
-h1 { font-size: 3em; } /* 48px */
-h2 { font-size: 2.625em;} /* 42px */
-h3 { font-size: 2.25em; } /* 36px */
-h4 { font-size: 2em; } /* 32px */
-h5 { font-size: 1.5em; } /* 24px */
-h6 { font-size: 1.25em; } /* 20px */
+h1 {
+  font-size: 3em; /* 48px */
+  @include breakpoint(l-one) { font-size: 2em; }
+}
+h2 {
+  font-size: 2.625em; /* 42px */
+  @include breakpoint(l-one) { font-size: 1.8em; }
+}
+h3 {
+  font-size: 2.25em; /* 36px */
+  @include breakpoint(l-one) { font-size: 1.625em; }
+}
+h4 {
+  font-size: 2em; /* 32px */
+  @include breakpoint(l-one) { font-size: 125em; }
+}
+h5 {
+  font-size: 1.5em; /* 24px */
+  @include breakpoint(l-one) { font-size: 1.125em; }
+}
+h6 {
+  font-size: 1.25em; /* 20px */
+  @include breakpoint(l-one) { font-size: 1em; }
+}
 p { margin: 0 0 20px 0; }
 strong { font-weight: 700; }
 i { font-style: italic; }
