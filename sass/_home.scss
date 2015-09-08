@@ -16,6 +16,7 @@
 	@include box-sizing(border-box);
 	@include breakpoint(l-three) {
 		height: auto;
+		min-height: calc(100vh - 112px);
     padding: 40px 0 60px 0;
 		img { opacity: 0.2; }
 		h1 {
@@ -32,15 +33,26 @@
 	h1 {
 		color: #FFF;
 		margin: 0 0 40px 0;
+		@include breakpoint(l-one) { margin: 0 0 24px 0; }
+	}
+	ul {
+		padding: 0 0 0 24px;
+		@extend %clear;
+		li {
+			color: #FFF;
+			float: left;
+			font-size: 0.8em;
+			font-weight: 600;
+			margin: 0 24px 8px 0;
+			text-transform: uppercase;
+			@include breakpoint(l-three) {
+				float: none;
+				margin: 0 0 8px 0;
+			}
+		}
 	}
 	p {
 		margin: 0 0 32px 0;
-		strong {
-			color: #FFF;
-			font-size: 0.9em;
-			text-transform: uppercase;
-			span { margin: 0 16px; }
-		}
 		small {
 			color: #999;
 			em {
