@@ -34,7 +34,13 @@
 
 	
 <!-- Styles -->
-<link rel="stylesheet" href="/styles/donde.css" />
+<script>
+  function loadCSSFilesAsync(e,t){function n(e){"loading"!=document.readyState?e():document.addEventListener?document.addEventListener("DOMContentLoaded",e):document.attachEvent("onreadystatechange",function(){"loading"!=document.readyState&&e()})}function a(a,o){if(o)document.createStyleSheet(a);else{var d=document.createElement("link");d.rel="stylesheet",d.href=a;var c=document.getElementsByTagName("head")[0];c.appendChild(d)}i--,0>=i&&"undefined"!=typeof t&&setTimeout(function(){n(t)},500*e.length)}function o(){var e=document.getElementsByTagName("head");0==e.length&&document.createElement("head"),e=document.getElementsByTagName("head");for(var a=e[0],o=0;o<c.length;o++){var d=document.createTextNode(c[o]),u=document.createElement("style");u.setAttribute("type","text/css"),a.appendChild(u),"undefined"!=typeof u.styleSheet?u.styleSheet.cssText=d:u.appendChild(d)}"undefined"!=typeof t&&setTimeout(function(){n(t)})}var d=[],c=[],u="//Mock";if(e instanceof Array)for(var i=e.length,s=0;s<e.length;s++){var r=e[s];"http:"==document.location.protocol&&0==r.indexOf("https:")&&(r=r.replace("https:","http:")),navigator.userAgent.match(/opera/)||null===navigator.userAgent.match(/MSIE 8/)&&null===navigator.userAgent.match(/MSIE 9/)&&null===navigator.userAgent.match(/MSIE 10/)?(d.push(new XMLHttpRequest),c.push(u),d[s].open("GET",r,!0),function(e){d[e].onreadystatechange=function(){4===this.readyState&&(this.status>=200&&this.status<400&&(c[e]=this.responseText),i--,0>=i&&o())}}(s),d[s].send(),d[s]=null):"complete"===document.readyState?a(r,!0):!function(e){window.addEventListener?window.addEventListener("load",function(){a(e)}):window.attachEvent("onload",function(){a(e)})}(r)}}
+  var cssFiles=["/styles/donde.css"];
+  loadCSSFilesAsync(cssFiles,function(){
+    document.getElementById("donde-overlay-spinner").style.display="none";
+  });
+</script>
 
 <!-- Favicon and App Icons -->
 <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
@@ -58,6 +64,10 @@
 
 </head>
 <body>
+
+  <div id="donde-overlay-spinner" style="position:fixed;top:0;opacity:1;height:100%;width:100%;z-index: 9999;background-color:#EDEFF0">
+    <img src="https://s3.amazonaws.com/donde-img/spinner-transparent.gif" style="position:fixed;top:50%;left:50%;margin-top:-64px;margin-left:-64px">
+  </div>
 
 	<a class="mobile-login" href="https://dashboard.donde.io/users/sign_in">Log In</a>
 	<header role="banner">
