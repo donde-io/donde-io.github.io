@@ -12,6 +12,6 @@ kramdown:
 
 permalink: /:title
 site_url: 'http://www..donde.io'
-exclude: ['Rakefile', 'README.md', 'config.rb']
+exclude: ['Rakefile', 'README.md', 'config.rb', 's3_website.yml']
 github:
 username: dev@donde.io

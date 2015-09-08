@@ -29,8 +29,6 @@ GEM
       deep_merge (= 1.0.0)
     deep_merge (1.0.0)
     dotenv (1.0.2)
-    dotenv-rails (1.0.2)
-      dotenv (= 1.0.2)
     execjs (2.6.0)
     fast-stemmer (1.0.2)
     ffi (1.9.10)
@@ -96,7 +94,6 @@ PLATFORMS
 
 DEPENDENCIES
   compass
-  dotenv-rails
   jekyll
   kramdown
   rouge
