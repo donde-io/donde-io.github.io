@@ -6,6 +6,9 @@ gem 'jekyll'
 gem 'kramdown'
 gem 'rouge'
 
+# Deploy to S3
+gem 's3_website'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
