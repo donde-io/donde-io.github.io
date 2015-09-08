@@ -115,13 +115,34 @@ footer {
 	width: 100%;
 	@include breakpoint(l-three) { padding: 40px 0 32px 0; }
 	.row { margin: 0; }
-	.site-links { margin: 0 0 40px 0; }
+	.site-links {
+		margin: 0 0 40px 0;
+		@include breakpoint(l-three) { margin: 0 0 20px 0; }
+	}
   h5 {
     color: #999;
     margin: 0 0 32px 0;
+		i.icon { display: none; visibility: hidden; }
+		@include breakpoint(l-three) {
+			background: #DDD;
+			border-radius: 4px;
+			color: #454545;
+			cursor: pointer;
+			margin: 0 0 8px 0;
+			padding: 16px;
+			@include box-sizing(border-box);
+			i.icon { display: inline-block; visibility: visible; }
+		}
   }
 	nav {
 		width: 100%;
+		@include breakpoint(l-three) {
+			background: #DDD;
+			display: none;
+			margin: -10px 0 8px 0;
+			padding: 8px 24px;
+			@include box-sizing(border-box);
+		}
 		a {
 			color: #666;
 			display: block;

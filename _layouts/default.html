@@ -46,9 +46,21 @@
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-			$('.bxslider').bxSlider({
-				auto: true
-			});
+	    $("#h-products").click(function() {
+				$(this).find("i.icon").toggleClass("right");
+	      $(this).find("i.icon").toggleClass("down");
+	      $("#n-products").toggle();
+	    });
+			$("#h-resources").click(function() {
+				$(this).find("i.icon").toggleClass("right");
+	      $(this).find("i.icon").toggleClass("down");
+	      $("#n-resources").toggle();
+	    });
+			$("#h-about").click(function() {
+				$(this).find("i.icon").toggleClass("right");
+	      $(this).find("i.icon").toggleClass("down");
+	      $("#n-about").toggle();
+	    });
 		});
 	</script>
 
