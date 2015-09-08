@@ -17,11 +17,6 @@ task :server => :clean do
   jekyll('serve --watch')
 end
 
-desc 'Build and deploy'
-task :deploy => :build do
-  sh 'rsync -crz --delete _site/ aceeight@hs18.name.com:public_html/'
-end
-
 desc 'Check links for site already running on localhost:4000'
 task :check_links do
   begin
