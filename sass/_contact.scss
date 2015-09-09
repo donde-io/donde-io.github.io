@@ -13,6 +13,7 @@ ul.contact-social {
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	li:first-child { list-style: none; }
 	li a {
   	background: #999;
   	border-radius: 4px;
