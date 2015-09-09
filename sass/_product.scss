@@ -48,7 +48,7 @@ img.products-dashboard {
 	background: #282D34;
 	padding: 60px 0;
 	text-align: center;
-	@include breakpoint(l-three) { padding: 40px 0; }
+	@include breakpoint(l-three) { padding: 40px 12px; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
@@ -62,9 +62,11 @@ img.products-dashboard {
 	background: #282D34;
 	padding: 60px 0 0 0;
 	text-align: center;
+	@include breakpoint(l-three) { padding: 40px 12px 0 12px; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
+		@include breakpoint(l-three) { margin: 0 0 20px 0; }
 	}
 }
 img.products-local-landing-page { vertical-align: bottom; }
@@ -75,8 +77,10 @@ img.products-local-landing-page { vertical-align: bottom; }
 	background: #282D34;
 	padding: 60px 0;
 	text-align: center;
+	@include breakpoint(l-three) { padding: 40px 12px; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
+		@include breakpoint(l-three) { margin: 0 0 20px 0; }
 	}
 }
