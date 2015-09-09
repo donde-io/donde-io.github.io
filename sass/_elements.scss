@@ -54,15 +54,15 @@ h3 {
 }
 h4 {
   font-size: 2em; /* 32px */
-  @include breakpoint(l-one) { font-size: 125em; }
+  @include breakpoint(l-one) { font-size: 1.5em; }
 }
 h5 {
   font-size: 1.5em; /* 24px */
-  @include breakpoint(l-one) { font-size: 1.125em; }
+  @include breakpoint(l-one) { font-size: 1.25em; }
 }
 h6 {
   font-size: 1.25em; /* 20px */
-  @include breakpoint(l-one) { font-size: 1em; }
+  @include breakpoint(l-one) { font-size: 1.125em; }
 }
 p { margin: 0 0 20px 0; }
 strong { font-weight: 700; }
