@@ -187,7 +187,10 @@ section {
 	padding: 120px 0;
 	@include breakpoint(l-three) { padding: 48px 0 20px 0; }
 	&.white { background: #FFF; }
-	&.highlight { text-align: center; }
+	&.highlight {
+		text-align: center;
+		@include breakpoint(l-three) { padding: 48px 0 40px 0; }
+	}
 	&.no-padding {
 		padding: 0;
 		text-align: center;
