@@ -11,10 +11,12 @@
 .hero-pricing {
 	background: #282D34;
 	padding: 40px 0 60px 0;
+	@include breakpoint(l-one) { padding: 20px 0; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
 		text-align: center;
+		@include breakpoint(l-one) { margin: 0 0 20px 0; }
 	}
 	h6 {
 		margin: 0;
