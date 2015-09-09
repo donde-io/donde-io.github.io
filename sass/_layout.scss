@@ -208,20 +208,30 @@ section {
 		}
 		&.no-margin { margin: 0; }
 	}
-	nav {
-		margin: 0 0 20px 0;
-		a {
-			color: #349CA5;
-			font-weight: 600;
-			text-transform: uppercase;
-			&:hover, &:active {
-				color: #333;
-				text-decoration: none;
+	ul {
+		display: table;
+		margin: 0 auto 20px auto;
+		@include breakpoint(l-three) { margin: 0 auto 8px auto; }
+		li {
+			color: #666;
+			float: left;
+			margin: 0 0 0 32px;
+			&:first-child { list-style: none; }
+			@include breakpoint(l-three) {
+				float: none;
+				margin: 0 0 8px 0;
+				text-align: left;
+				&:first-child { list-style: disc; }
 			}
-		}
-		span {
-			font-weight: 600;
-			margin: 0 12px;
+			a {
+				color: #349CA5;
+				font-weight: 600;
+				text-transform: uppercase;
+				&:hover, &:active {
+					color: #333;
+					text-decoration: none;
+				}
+			}
 		}
 	}
 	.features-list {
@@ -250,5 +260,8 @@ section {
 				strong { text-transform: uppercase; }
 			}
 		}
+	}
+	a.button {
+		@include breakpoint(l-one) { margin: 0 0 20px 0; width: 100%; }
 	}
 }
