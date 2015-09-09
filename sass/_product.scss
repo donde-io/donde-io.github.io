@@ -48,9 +48,11 @@ img.products-dashboard {
 	background: #282D34;
 	padding: 60px 0;
 	text-align: center;
+	@include breakpoint(l-three) { padding: 40px 0; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
+		@include breakpoint(l-three) { margin: 0 0 20px 0; }
 	}
 }
 
