@@ -31,7 +31,9 @@ header {
     img.web { @include breakpoint(l-three) { display: none; visibility: hidden; } }
     img.mobile {
       display: none;
+			height: 100%;
       visibility: hidden;
+			width: auto;
       @include breakpoint(l-three) { display: block; visibility: visible; }
     }
 	}
