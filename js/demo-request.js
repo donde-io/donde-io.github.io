@@ -33,7 +33,7 @@ $(document).ready(function(){
                 analytics.track('Requested Demo', {
                     email: demoRequest.attributes.email
                 });
-                location = 'http://donde.io/contact/thank-you.html';
+                location = 'http://www.donde.io/contact/thank-you.html';
             },
             error: function(demoRequest, error) {
                 alert('Failed to send the demo request! Please try again.');
