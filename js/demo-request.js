@@ -30,9 +30,9 @@ $(document).ready(function(){
         demoRequest.save(null, {
             success: function(demoRequest) {
                 // The object was saved successfully.
-                analytics.track('Requested Demo', {
-                    email: demoRequest.attributes.email
-                });
+                //analytics.track('Requested Demo', {
+                  //  email: demoRequest.attributes.email
+                //});
                 location = 'http://www.donde.io/contact/thank-you.html';
             },
             error: function(demoRequest, error) {
