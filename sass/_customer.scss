@@ -1,0 +1,95 @@
+/*
+*  Dónde Marketing Site
+*  Copyright Dónde 2013-2015
+*  donde.io
+*/
+
+
+// ----------
+// Customers Page
+
+.hero-customers {
+  background: #282D34;
+  padding: 60px 0;
+  text-align: center;
+	@include breakpoint(l-three) { padding: 40px 12px; }
+	h1 {
+		color: #FFF;
+		margin: 0 0 60px 0;
+		@include breakpoint(l-three) { margin: 0 0 20px 0; }
+	}
+}
+
+ul.customer-case-studies {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	@extend %clear;
+	li {
+		background: #FFF;
+		border-bottom: 2px solid #DDD;
+		margin: 0 2% 0 0;
+		padding: 32px;
+		width: 32%;
+		@include box-sizing(border-box);
+		&:last-child { margin: 0; }
+	}
+}
+
+.loyal-customers {
+	h3 { margin: 0 0 20px 0; }
+	p { margin: 0 0 80px 0; }
+}
+a.customer-logo {
+	display: block;
+	line-height: 100px;
+	margin: 0 auto 32px auto;
+	max-width: 60%;
+	width: 100%;
+	img { vertical-align: middle; }
+}
+
+section.customer-testimonials {
+	background: #5D4A62 url("/img/bg-customer-testimonial.png") 0 0 no-repeat;
+	background-size: cover;
+	padding: 100px 0 120px 0;
+	text-align: center;
+	@include breakpoint(l-one) { padding: 40px 0 60px 0; }
+	.bx-wrapper {
+		margin: 0 auto;
+		.bx-viewport {
+			background: inherit;
+			border: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+		ul.bxslider {
+			margin: 0;
+			li {
+				margin: 0;
+				h5 {
+					color: #FFF;
+					font-size: 1.8em;
+					margin: 0 0 32px 0;
+					@include breakpoint(l-one) { text-align: center; }
+				}
+				p {
+					color: #FFF;
+					font-size: 0.9em;
+					margin: 0 0 20px 0;
+					text-transform: uppercase;
+					@include breakpoint(l-one) { text-align: center; }
+				}
+			}
+		}
+		.bx-pager.bx-default-pager a {
+  		background: none;
+			border: 2px solid #FFF;
+			border-radius: 20px;
+			&.active { background: #FFF; }
+		}
+		.bx-controls-direction { display: none; visibility: hidden; }
+	}
+}
