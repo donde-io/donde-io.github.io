@@ -23,6 +23,8 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
   width: 100%;
 }
 a {
