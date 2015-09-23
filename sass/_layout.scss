@@ -219,7 +219,6 @@ section {
 			color: #666;
 			float: left;
 			margin: 0 0 0 32px;
-			&:first-child { list-style: none; }
 			@include breakpoint(l-three) {
 				float: none;
 				margin: 0 0 8px 0;

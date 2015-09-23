@@ -9,17 +9,49 @@
 // Customers Page
 
 .hero-customers {
-  background: #282D34;
+  background: #282D34 url("/img/bg-love-pattern.png") top center no-repeat;
   padding: 60px 0;
   text-align: center;
 	@include breakpoint(l-three) { padding: 40px 12px; }
 	h1 {
 		color: #FFF;
 		margin: 0 0 60px 0;
-		@include breakpoint(l-three) { margin: 0 0 20px 0; }
+		@include breakpoint(l-three) {
+      margin: 0 0 20px 0;
+      .hide-title {
+        display: none;
+        visibility: hidden;
+      }
+    }
 	}
 }
 
+.main-case-study {
+  background: #FFF;
+  border-bottom: 2px solid #DDD;
+  padding: 32px;
+  @extend %clear;
+  .mcs-img {
+    float: left;
+    margin: 0 4% 0 0;
+    padding: 32px 0 0 0;
+    width: 38%;
+    @include breakpoint(l-one) {
+      float: none;
+      margin: 0 0 20px 0;
+      width: 100%;
+    }
+  }
+  .mcs-info {
+    float: left;
+    text-align: left;
+    width: 58%;
+    @include breakpoint(l-one) {
+      float: none;
+      width: 100%;
+    }
+  }
+}
 ul.customer-case-studies {
 	list-style: none;
 	margin: 0;
@@ -31,9 +63,33 @@ ul.customer-case-studies {
 		border-bottom: 2px solid #DDD;
 		margin: 0 2% 0 0;
 		padding: 32px;
+		text-align: left;
 		width: 32%;
 		@include box-sizing(border-box);
+		@include breakpoint(l-three) {
+      margin: 0 0 12px 0;
+			width: 100%;
+			&:first-child { list-style: none; }
+		}
 		&:last-child { margin: 0; }
+		.img-wrapper {
+			height: 80px;
+			margin: 0 0 60px 0;
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 180px;
+				width: 100%;
+			}
+		}
+		p {
+			font-size: 0.9em;
+			margin: 0 0 32px 0;
+		}
+		a {
+			width: 100%;
+			@include breakpoint(l-one) { margin: 0; }
+		}
 	}
 }
 
@@ -61,9 +117,11 @@ section.customer-testimonials {
 		.bx-viewport {
 			background: inherit;
 			border: none;
+      min-height: 160px;
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
 			box-shadow: none;
+      @include breakpoint(l-one) { min-height: 280px; }
 		}
 		ul.bxslider {
 			margin: 0;
@@ -72,7 +130,7 @@ section.customer-testimonials {
 				h5 {
 					color: #FFF;
 					font-size: 1.8em;
-					margin: 0 0 32px 0;
+          margin: 0 0 32px 0;
 					@include breakpoint(l-one) { text-align: center; }
 				}
 				p {
@@ -84,12 +142,16 @@ section.customer-testimonials {
 				}
 			}
 		}
-		.bx-pager.bx-default-pager a {
-  		background: none;
-			border: 2px solid #FFF;
-			border-radius: 20px;
-			&.active { background: #FFF; }
-		}
+		.bx-pager.bx-default-pager {
+      bottom: -48px;
+      @include breakpoint(l-one) { bottom: -24px; }
+      a {
+    		background: none;
+  			border: 2px solid #FFF;
+  			border-radius: 20px;
+  			&.active { background: #FFF; }
+  		}
+    }
 		.bx-controls-direction { display: none; visibility: hidden; }
 	}
 }
