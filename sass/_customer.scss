@@ -121,7 +121,7 @@ section.customer-testimonials {
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
 			box-shadow: none;
-      @include breakpoint(l-one) { min-height: 280px; }
+      @include breakpoint(l-one) { min-height: 300px; }
 		}
 		ul.bxslider {
 			margin: 0;
