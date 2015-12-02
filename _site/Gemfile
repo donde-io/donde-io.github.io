@@ -13,5 +13,5 @@ gem 's3_website'
 # in production environments by default.
 group :assets do
   gem 'sass'
-  gem 'compass'
+  gem 'compass', "0.12.7"
 end
