@@ -1,8 +1,6 @@
 navigation:
   - title: Products
     url: /products
-  - title: Pricing<span> & Signup</span>
-    url: /pricing
   - title: Customers
     url: /customers
 

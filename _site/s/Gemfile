@@ -1,0 +1,19 @@
+source 'https://rubygems.org'
+
+gem 'jekyll', "0.12"
+
+# Syntax Highlighting
+gem 'kramdown'
+gem 'rouge'
+
+# Deploy to S3
+gem 's3_website'
+
+gem 'json'
+
+# Gems used only for assets and not required
+# in production environments by default.
+group :assets do
+  gem 'sass'
+  gem 'compass', "0.12.7"
+end
